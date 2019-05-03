@@ -1,0 +1,360 @@
+\hypertarget{class_treecode}{}\section{Referencia de la Clase Treecode}
+\label{class_treecode}\index{Treecode@{Treecode}}
+
+
+Representa una \hyperlink{class_treecode}{Treecode}.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_treecode_a190d6af790b7046ed7c96e7a57f0cd38}{Treecode} ()
+\begin{DoxyCompactList}\small\item\em Crea un \hyperlink{class_treecode}{Treecode}. \end{DoxyCompactList}\item 
+\hyperlink{class_treecode_a92ec92e0e44e910e546c6d1943bd44ea}{Treecode} (const pair$<$ string, int $>$ \&a)
+\item 
+\hyperlink{class_treecode_aaf75f31e3d5abfe7c1f0439489ad45d0}{Treecode} (const pair$<$ string, int $>$ \&a, const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&left, const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&right)
+\item 
+\hyperlink{class_treecode_a4b25e99b1a356dbcf9901c1e63105b1b}{$\sim$\+Treecode} ()
+\item 
+void \hyperlink{class_treecode_a9b9e9d2f0cce1d4293a7e28ab0ba76f7}{actualitzar\+\_\+treecode} (\hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} \&taula)
+\begin{DoxyCompactList}\small\item\em Actualitza un \hyperlink{class_treecode}{Treecode}. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\+\_\+arbre} () const
+\item 
+void \hyperlink{class_treecode_a3d3b580b42b739716f168d71cb0e3c8c}{consultar\+\_\+paraula} (string \&codi)
+\item 
+string \hyperlink{class_treecode_adee719707b72a25e70e3c108d0bd60a1}{consultar\+\_\+codi} (const string \&paraula)
+\item 
+bool \hyperlink{class_treecode_ac320d8634179b2ab24dc89bd706264ca}{cerca\+\_\+aux} (const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&t, const string \&petita, bool \&b, string \&codi)
+\item 
+void \hyperlink{class_treecode_acfa6c1b465b514251f7101b61195d50f}{escriure\+\_\+treecode} (const \hyperlink{class_treecode}{Treecode} \&arbre) const
+\begin{DoxyCompactList}\small\item\em Escriu el \hyperlink{class_treecode}{Treecode}. \end{DoxyCompactList}\item 
+void \hyperlink{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}{escriure\+\_\+\+Bin\+Tree\+\_\+preordre} (const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&a) const
+\item 
+void \hyperlink{class_treecode_a62b82cb668f780cf882df8109c13aeb4}{escriure\+\_\+\+Bin\+Tree\+\_\+inordre} (const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&a) const
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una \hyperlink{class_treecode}{Treecode}. 
+
+Definición en la línea 15 del archivo Treecode.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_treecode_a190d6af790b7046ed7c96e7a57f0cd38}\label{class_treecode_a190d6af790b7046ed7c96e7a57f0cd38}} 
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{Treecode()}{Treecode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Treecode\+::\+Treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un \hyperlink{class_treecode}{Treecode}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha creat un \hyperlink{class_treecode}{Treecode} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+14 \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a92ec92e0e44e910e546c6d1943bd44ea}\label{class_treecode_a92ec92e0e44e910e546c6d1943bd44ea}} 
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{Treecode()}{Treecode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Treecode\+::\+Treecode (\begin{DoxyParamCaption}\item[{const pair$<$ string, int $>$ \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 16 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+16                                             \{
+17     \hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode} = BinTree <pair<string, int> > (a);
+18 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_aaf75f31e3d5abfe7c1f0439489ad45d0}\label{class_treecode_aaf75f31e3d5abfe7c1f0439489ad45d0}} 
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\index{Treecode@{Treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{Treecode()}{Treecode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Treecode\+::\+Treecode (\begin{DoxyParamCaption}\item[{const pair$<$ string, int $>$ \&}]{a,  }\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{left,  }\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{right }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 20 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+20                                                                                                            
+                          \{
+21     \hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode} = BinTree <pair<string, int> > (a,left,right);
+22 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a4b25e99b1a356dbcf9901c1e63105b1b}\label{class_treecode_a4b25e99b1a356dbcf9901c1e63105b1b}} 
+\index{Treecode@{Treecode}!````~Treecode@{$\sim$\+Treecode}}
+\index{````~Treecode@{$\sim$\+Treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{$\sim$\+Treecode()}{~Treecode()}}
+{\footnotesize\ttfamily Treecode\+::$\sim$\+Treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 32 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+32 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_treecode_a9b9e9d2f0cce1d4293a7e28ab0ba76f7}\label{class_treecode_a9b9e9d2f0cce1d4293a7e28ab0ba76f7}} 
+\index{Treecode@{Treecode}!actualitzar\+\_\+treecode@{actualitzar\+\_\+treecode}}
+\index{actualitzar\+\_\+treecode@{actualitzar\+\_\+treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{actualitzar\+\_\+treecode()}{actualitzar\_treecode()}}
+{\footnotesize\ttfamily void Treecode\+::actualitzar\+\_\+treecode (\begin{DoxyParamCaption}\item[{\hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} \&}]{taula }\end{DoxyParamCaption})}
+
+
+
+Actualitza un \hyperlink{class_treecode}{Treecode}. 
+
+\begin{DoxyPrecond}{Precondición}
+El \hyperlink{class_treecode}{Treecode} existeix 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha actualitzat el \hyperlink{class_treecode}{Treecode} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 34 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+34                                                         \{
+35     
+36     set<Treecode, comp> cjarbres;
+37     map<string,int> taulafreq = taula.\hyperlink{class_taula__de__freq_a438f3ce025ca433420891fead5affae4}{consultar\_taula\_freq}();
+38     map<string,int>::iterator it = taulafreq.begin();
+39     
+40     \textcolor{keywordflow}{while}(it != taulafreq.end())\{
+41         \hyperlink{class_treecode}{Treecode} a(pair<string,int> ((*it).first, it->second));
+42         cjarbres.insert(a);
+43         ++it;
+44     \}
+45     \textcolor{keywordflow}{while}(cjarbres.size()>1)\{
+46         set<Treecode,comp>::iterator it = cjarbres.begin();
+47         BinTree<pair<string,int> > left = (*it).treecode;
+48         cjarbres.erase(it);
+49         it = cjarbres.begin();
+50         BinTree<pair<string,int> > right = (*it).treecode;
+51         cjarbres.erase(it);
+52         \textcolor{keywordtype}{int} n;
+53         \textcolor{keywordtype}{string} s;
+54         \textcolor{keywordflow}{if}(not left.empty() and not right.empty())\{
+55             n = left.value().second;
+56             \textcolor{keywordtype}{int} ni = right.value().second;
+57             n += ni;
+58             s = left.value().first;
+59             \textcolor{keywordtype}{string} se = right.value().first;
+60             \textcolor{keywordflow}{if}(s < se)s = s + se;
+61             \textcolor{keywordflow}{else} s = se + s;
+62         \}
+63         \hyperlink{class_treecode}{Treecode} aux1 (pair<string,int> (s,n),left,right);
+64         aux1.treecode.right() = right;
+65         pair<set<Treecode,comp>::iterator,\textcolor{keywordtype}{bool}> ret;
+66         ret = cjarbres.insert(aux1);
+67     \}
+68     set<Treecode,comp>::iterator it3 = cjarbres.begin();
+69     \hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode} = (*it3).treecode;
+70 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a781e52014473e0a905763a6a537cc2aa}\label{class_treecode_a781e52014473e0a905763a6a537cc2aa}} 
+\index{Treecode@{Treecode}!consultar\+\_\+arbre@{consultar\+\_\+arbre}}
+\index{consultar\+\_\+arbre@{consultar\+\_\+arbre}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{consultar\+\_\+arbre()}{consultar\_arbre()}}
+{\footnotesize\ttfamily Bin\+Tree$<$ pair$<$ string, int $>$ $>$ Treecode\+::consultar\+\_\+arbre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea 72 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+72                                                           \{
+73     \textcolor{keywordflow}{return} \hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode};
+74 \}    
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a3d3b580b42b739716f168d71cb0e3c8c}\label{class_treecode_a3d3b580b42b739716f168d71cb0e3c8c}} 
+\index{Treecode@{Treecode}!consultar\+\_\+paraula@{consultar\+\_\+paraula}}
+\index{consultar\+\_\+paraula@{consultar\+\_\+paraula}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{consultar\+\_\+paraula()}{consultar\_paraula()}}
+{\footnotesize\ttfamily void Treecode\+::consultar\+\_\+paraula (\begin{DoxyParamCaption}\item[{string \&}]{codi }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 76 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+76                                             \{
+77     codi = \textcolor{stringliteral}{"a"};
+78 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_adee719707b72a25e70e3c108d0bd60a1}\label{class_treecode_adee719707b72a25e70e3c108d0bd60a1}} 
+\index{Treecode@{Treecode}!consultar\+\_\+codi@{consultar\+\_\+codi}}
+\index{consultar\+\_\+codi@{consultar\+\_\+codi}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{consultar\+\_\+codi()}{consultar\_codi()}}
+{\footnotesize\ttfamily string Treecode\+::consultar\+\_\+codi (\begin{DoxyParamCaption}\item[{const string \&}]{paraula }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 110 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+110                                                     \{
+111     \textcolor{keywordtype}{bool} b;
+112     \textcolor{keywordtype}{string} codi,aux;
+113     b = \hyperlink{class_treecode_ac320d8634179b2ab24dc89bd706264ca}{cerca\_aux}(\hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode},paraula,b,codi);
+114     \textcolor{keywordtype}{int} n = codi.length();
+115     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < n/2; ++i)\{
+116         aux[0] = codi[i];
+117         codi[i] = codi[n-1-i];
+118         codi[n-1-i] = aux[0];
+119     \}
+120     \textcolor{keywordflow}{return} codi;
+121 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_ac320d8634179b2ab24dc89bd706264ca}\label{class_treecode_ac320d8634179b2ab24dc89bd706264ca}} 
+\index{Treecode@{Treecode}!cerca\+\_\+aux@{cerca\+\_\+aux}}
+\index{cerca\+\_\+aux@{cerca\+\_\+aux}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{cerca\+\_\+aux()}{cerca\_aux()}}
+{\footnotesize\ttfamily bool Treecode\+::cerca\+\_\+aux (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{t,  }\item[{const string \&}]{petita,  }\item[{bool \&}]{b,  }\item[{string \&}]{codi }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 126 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+126                                                                                                         \{
+127     \textcolor{keywordflow}{if}(t.empty())b = \textcolor{keyword}{false};
+128     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(t.value().first == petita) \{
+129         b = \textcolor{keyword}{true};
+130     \}
+131     \textcolor{keywordflow}{else} \{
+132         \textcolor{keywordflow}{if}(\hyperlink{_treecode_8cc_a296ac1f687f24e1b4c27432d04bc2c98}{string\_esta}(t.left().value().first,petita))\{
+133             \hyperlink{class_treecode_ac320d8634179b2ab24dc89bd706264ca}{cerca\_aux}(t.left(),petita,b,codi);
+134             \textcolor{keywordflow}{if}(b)codi += \textcolor{stringliteral}{"0"};
+135         \}
+136         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{_treecode_8cc_a296ac1f687f24e1b4c27432d04bc2c98}{string\_esta}(t.right().value().first,petita))\{
+137             \hyperlink{class_treecode_ac320d8634179b2ab24dc89bd706264ca}{cerca\_aux}(t.right(),petita,b,codi);
+138             \textcolor{keywordflow}{if}(b)codi += \textcolor{stringliteral}{"1"};
+139         \}
+140     \}
+141     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+142 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_acfa6c1b465b514251f7101b61195d50f}\label{class_treecode_acfa6c1b465b514251f7101b61195d50f}} 
+\index{Treecode@{Treecode}!escriure\+\_\+treecode@{escriure\+\_\+treecode}}
+\index{escriure\+\_\+treecode@{escriure\+\_\+treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{escriure\+\_\+treecode()}{escriure\_treecode()}}
+{\footnotesize\ttfamily void Treecode\+::escriure\+\_\+treecode (\begin{DoxyParamCaption}\item[{const \hyperlink{class_treecode}{Treecode} \&}]{arbre }\end{DoxyParamCaption}) const}
+
+
+
+Escriu el \hyperlink{class_treecode}{Treecode}. 
+
+\begin{DoxyPrecond}{Precondición}
+El \hyperlink{class_treecode}{Treecode} existeix 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit pel canal estàndard de sortida el \hyperlink{class_treecode}{Treecode} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 80 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+80                                                           \{    
+81     cout << \textcolor{stringliteral}{"recorrido en preorden:"} << endl;
+82     \hyperlink{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}{escriure\_BinTree\_preordre}(arbre.\hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode});
+83     cout << \textcolor{stringliteral}{"recorrido en inorden:"} << endl;
+84     \hyperlink{class_treecode_a62b82cb668f780cf882df8109c13aeb4}{escriure\_BinTree\_inordre}(arbre.\hyperlink{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}{treecode});
+85 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}\label{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}} 
+\index{Treecode@{Treecode}!escriure\+\_\+\+Bin\+Tree\+\_\+preordre@{escriure\+\_\+\+Bin\+Tree\+\_\+preordre}}
+\index{escriure\+\_\+\+Bin\+Tree\+\_\+preordre@{escriure\+\_\+\+Bin\+Tree\+\_\+preordre}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{escriure\+\_\+\+Bin\+Tree\+\_\+preordre()}{escriure\_BinTree\_preordre()}}
+{\footnotesize\ttfamily void Treecode\+::escriure\+\_\+\+Bin\+Tree\+\_\+preordre (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea 87 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+87                                                                                   \{
+88     \textcolor{keywordflow}{if}(not a.empty())\{
+89         pair<string,int> x = a.value();
+90         cout << x.first << \textcolor{stringliteral}{" "} << x.second<< endl;
+91         \hyperlink{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}{escriure\_BinTree\_preordre}(a.left());
+92         \hyperlink{class_treecode_a294ce0a89de8d9cc2774bc0e7bf545b2}{escriure\_BinTree\_preordre}(a.right());
+93     \}
+94 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_treecode_a62b82cb668f780cf882df8109c13aeb4}\label{class_treecode_a62b82cb668f780cf882df8109c13aeb4}} 
+\index{Treecode@{Treecode}!escriure\+\_\+\+Bin\+Tree\+\_\+inordre@{escriure\+\_\+\+Bin\+Tree\+\_\+inordre}}
+\index{escriure\+\_\+\+Bin\+Tree\+\_\+inordre@{escriure\+\_\+\+Bin\+Tree\+\_\+inordre}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{escriure\+\_\+\+Bin\+Tree\+\_\+inordre()}{escriure\_BinTree\_inordre()}}
+{\footnotesize\ttfamily void Treecode\+::escriure\+\_\+\+Bin\+Tree\+\_\+inordre (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea 96 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+96                                                                                  \{
+97     \textcolor{keywordflow}{if}(not a.empty())\{
+98         \hyperlink{class_treecode_a62b82cb668f780cf882df8109c13aeb4}{escriure\_BinTree\_inordre}(a.left());
+99         pair<string,int> x = a.value();
+100         cout << x.first << \textcolor{stringliteral}{" "} << x.second<< endl;
+101         \hyperlink{class_treecode_a62b82cb668f780cf882df8109c13aeb4}{escriure\_BinTree\_inordre}(a.right());        
+102     \}
+103 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}\label{class_treecode_abd4467b0a13a57fcd3bddf4a60853372}} 
+\index{Treecode@{Treecode}!treecode@{treecode}}
+\index{treecode@{treecode}!Treecode@{Treecode}}
+\subsubsection{\texorpdfstring{treecode}{treecode}}
+{\footnotesize\ttfamily Bin\+Tree$<$pair$<$string, int$>$ $>$ Treecode\+::treecode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 19 del archivo Treecode.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_treecode_8hh}{Treecode.\+hh}\item 
+\hyperlink{_treecode_8cc}{Treecode.\+cc}\end{DoxyCompactItemize}

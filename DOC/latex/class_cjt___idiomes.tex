@@ -1,0 +1,198 @@
+\hypertarget{class_cjt___idiomes}{}\section{Referencia de la Clase Cjt\+\_\+\+Idiomes}
+\label{class_cjt___idiomes}\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+
+
+Representa un \hyperlink{class_cjt___idiomes}{Cjt\+\_\+\+Idiomes}.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt___idiomes_af77cbc534e3e83142a818314f5c24ae3}{Cjt\+\_\+\+Idiomes} ()
+\begin{DoxyCompactList}\small\item\em Crea un conjunt d\textquotesingle{}idiomes buit. \end{DoxyCompactList}\item 
+\hyperlink{class_cjt___idiomes_ab36517bd1824e0f00cab6cf724b6ad6f}{$\sim$\+Cjt\+\_\+\+Idiomes} ()
+\item 
+void \hyperlink{class_cjt___idiomes_a27ad0dd99449fffa904e6a757b4388ad}{omplir\+\_\+cjt\+\_\+idiomes} ()
+\begin{DoxyCompactList}\small\item\em Omple un conjunt d\textquotesingle{}idiomes amb n idiomes. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt___idiomes_a9e75f643c62886df635403bd3108c1df}{afegir\+\_\+modificar\+\_\+idioma} (const string \&idioma)
+\begin{DoxyCompactList}\small\item\em Afegeix un idioma o el modifica. \end{DoxyCompactList}\item 
+string \hyperlink{class_cjt___idiomes_a745de8e5d29e235cb1e2142d8acaaad9}{codifica} (string idioma, string \&text)
+\begin{DoxyCompactList}\small\item\em Codifica un text en un idioma. \end{DoxyCompactList}\item 
+string \hyperlink{class_cjt___idiomes_ab77062c4c2b311bbc1fc1143073bc036}{decodifica} (string idioma, string \&text)
+\begin{DoxyCompactList}\small\item\em Decodifica un text en un idioma. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \hyperlink{class_cjt___idiomes_a10390ac35850d05a28d06dbf6a3deb4f}{consultar\+\_\+taula\+\_\+freq} (string idioma)
+\begin{DoxyCompactList}\small\item\em Consulta la taula de freq del idioma. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \hyperlink{class_cjt___idiomes_a2bf21a96cdbba804d53a097c42fe3b93}{consultar\+\_\+\+Treecode} (string idioma)
+\begin{DoxyCompactList}\small\item\em Consulta el \hyperlink{class_treecode}{Treecode} del idioma especificat. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \hyperlink{class_cjt___idiomes_af8497129cf6b3b094e6f26a0c030c785}{consultar\+\_\+taula\+\_\+codis} (string idioma)
+\begin{DoxyCompactList}\small\item\em Consulta la taula de codis del idioma especificat. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cjt___idiomes_a699b46fae0fb902952cc5cad27604928}{idioma\+\_\+esta} (const string \&idioma, const \hyperlink{class_cjt___idiomes}{Cjt\+\_\+\+Idiomes} \&conjunt)
+\begin{DoxyCompactList}\small\item\em Comprva si un idioma es troba al conjunt o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \hyperlink{class_cjt___idiomes}{Cjt\+\_\+\+Idiomes}. 
+
+Definición en la línea 17 del archivo Cjt\+\_\+\+Idiomes.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt___idiomes_af77cbc534e3e83142a818314f5c24ae3}\label{class_cjt___idiomes_af77cbc534e3e83142a818314f5c24ae3}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{Cjt\+\_\+\+Idiomes()}{Cjt\_Idiomes()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Idiomes\+::\+Cjt\+\_\+\+Idiomes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un conjunt d\textquotesingle{}idiomes buit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha creat un conjunt d\textquotesingle{}idiomes buit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_ab36517bd1824e0f00cab6cf724b6ad6f}\label{class_cjt___idiomes_ab36517bd1824e0f00cab6cf724b6ad6f}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!````~Cjt\+\_\+\+Idiomes@{$\sim$\+Cjt\+\_\+\+Idiomes}}
+\index{````~Cjt\+\_\+\+Idiomes@{$\sim$\+Cjt\+\_\+\+Idiomes}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{$\sim$\+Cjt\+\_\+\+Idiomes()}{~Cjt\_Idiomes()}}
+{\footnotesize\ttfamily Cjt\+\_\+\+Idiomes\+::$\sim$\+Cjt\+\_\+\+Idiomes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt___idiomes_a27ad0dd99449fffa904e6a757b4388ad}\label{class_cjt___idiomes_a27ad0dd99449fffa904e6a757b4388ad}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!omplir\+\_\+cjt\+\_\+idiomes@{omplir\+\_\+cjt\+\_\+idiomes}}
+\index{omplir\+\_\+cjt\+\_\+idiomes@{omplir\+\_\+cjt\+\_\+idiomes}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{omplir\+\_\+cjt\+\_\+idiomes()}{omplir\_cjt\_idiomes()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Idiomes\+::omplir\+\_\+cjt\+\_\+idiomes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Omple un conjunt d\textquotesingle{}idiomes amb n idiomes. 
+
+\begin{DoxyPrecond}{Precondición}
+Conj buit, n$>$=0, llista d\textquotesingle{}idiomes en el canal d\textquotesingle{}entrada 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El conjunt d\textquotesingle{}idiomes ha quedat ple amb els n idiomes del canal d\textquotesingle{}entrada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_a9e75f643c62886df635403bd3108c1df}\label{class_cjt___idiomes_a9e75f643c62886df635403bd3108c1df}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!afegir\+\_\+modificar\+\_\+idioma@{afegir\+\_\+modificar\+\_\+idioma}}
+\index{afegir\+\_\+modificar\+\_\+idioma@{afegir\+\_\+modificar\+\_\+idioma}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{afegir\+\_\+modificar\+\_\+idioma()}{afegir\_modificar\_idioma()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Idiomes\+::afegir\+\_\+modificar\+\_\+idioma (\begin{DoxyParamCaption}\item[{const string \&}]{idioma }\end{DoxyParamCaption})}
+
+
+
+Afegeix un idioma o el modifica. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El paràmetre implícit s\textquotesingle{}hi ha afegit l\textquotesingle{}idioma si no hi era, sinó, s\textquotesingle{}ha modificat l\textquotesingle{}idioma sumant les freqüències. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_a745de8e5d29e235cb1e2142d8acaaad9}\label{class_cjt___idiomes_a745de8e5d29e235cb1e2142d8acaaad9}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!codifica@{codifica}}
+\index{codifica@{codifica}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{codifica()}{codifica()}}
+{\footnotesize\ttfamily string Cjt\+\_\+\+Idiomes\+::codifica (\begin{DoxyParamCaption}\item[{string}]{idioma,  }\item[{string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Codifica un text en un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}idioma es triba en el conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el text es pot codificar, retorna un string amb el text codificat, sinó, informa de que no el text no pertany a l\textquotesingle{}idioma 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_ab77062c4c2b311bbc1fc1143073bc036}\label{class_cjt___idiomes_ab77062c4c2b311bbc1fc1143073bc036}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!decodifica@{decodifica}}
+\index{decodifica@{decodifica}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{decodifica()}{decodifica()}}
+{\footnotesize\ttfamily string Cjt\+\_\+\+Idiomes\+::decodifica (\begin{DoxyParamCaption}\item[{string}]{idioma,  }\item[{string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Decodifica un text en un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}idioma es troba al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el text codificat pertany a l\textquotesingle{}idioma, retorna un string amb el text de codificat, sinó, informa de que no el text no pertany a l\textquotesingle{}idioma 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_a10390ac35850d05a28d06dbf6a3deb4f}\label{class_cjt___idiomes_a10390ac35850d05a28d06dbf6a3deb4f}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}}
+\index{consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{consultar\+\_\+taula\+\_\+freq()}{consultar\_taula\_freq()}}
+{\footnotesize\ttfamily map$<$string,int$>$ Cjt\+\_\+\+Idiomes\+::consultar\+\_\+taula\+\_\+freq (\begin{DoxyParamCaption}\item[{string}]{idioma }\end{DoxyParamCaption})}
+
+
+
+Consulta la taula de freq del idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}idioma es troba al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la taula de freq del idioma especificat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_a2bf21a96cdbba804d53a097c42fe3b93}\label{class_cjt___idiomes_a2bf21a96cdbba804d53a097c42fe3b93}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!consultar\+\_\+\+Treecode@{consultar\+\_\+\+Treecode}}
+\index{consultar\+\_\+\+Treecode@{consultar\+\_\+\+Treecode}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{consultar\+\_\+\+Treecode()}{consultar\_Treecode()}}
+{\footnotesize\ttfamily Bin\+Tree$<$ pair $<$ string, int$>$ $>$ Cjt\+\_\+\+Idiomes\+::consultar\+\_\+\+Treecode (\begin{DoxyParamCaption}\item[{string}]{idioma }\end{DoxyParamCaption})}
+
+
+
+Consulta el \hyperlink{class_treecode}{Treecode} del idioma especificat. 
+
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}idioma es troba al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un Bin\+Tree del \hyperlink{class_treecode}{Treecode} del idioma especificat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_af8497129cf6b3b094e6f26a0c030c785}\label{class_cjt___idiomes_af8497129cf6b3b094e6f26a0c030c785}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!consultar\+\_\+taula\+\_\+codis@{consultar\+\_\+taula\+\_\+codis}}
+\index{consultar\+\_\+taula\+\_\+codis@{consultar\+\_\+taula\+\_\+codis}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{consultar\+\_\+taula\+\_\+codis()}{consultar\_taula\_codis()}}
+{\footnotesize\ttfamily map$<$string,string$>$ Cjt\+\_\+\+Idiomes\+::consultar\+\_\+taula\+\_\+codis (\begin{DoxyParamCaption}\item[{string}]{idioma }\end{DoxyParamCaption})}
+
+
+
+Consulta la taula de codis del idioma especificat. 
+
+\begin{DoxyPrecond}{Precondición}
+L\textquotesingle{}idioma es troba al conjunt 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un map amb la taula de codis del idioma especificat 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cjt___idiomes_a699b46fae0fb902952cc5cad27604928}\label{class_cjt___idiomes_a699b46fae0fb902952cc5cad27604928}} 
+\index{Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}!idioma\+\_\+esta@{idioma\+\_\+esta}}
+\index{idioma\+\_\+esta@{idioma\+\_\+esta}!Cjt\+\_\+\+Idiomes@{Cjt\+\_\+\+Idiomes}}
+\subsubsection{\texorpdfstring{idioma\+\_\+esta()}{idioma\_esta()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+\+Idiomes\+::idioma\+\_\+esta (\begin{DoxyParamCaption}\item[{const string \&}]{idioma,  }\item[{const \hyperlink{class_cjt___idiomes}{Cjt\+\_\+\+Idiomes} \&}]{conjunt }\end{DoxyParamCaption})}
+
+
+
+Comprva si un idioma es troba al conjunt o no. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un boleà en funció de si l\textquotesingle{}idioma es troba al paràmetre implícit o no 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt___idiomes_8hh}{Cjt\+\_\+\+Idiomes.\+hh}\end{DoxyCompactItemize}

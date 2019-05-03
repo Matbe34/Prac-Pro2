@@ -1,0 +1,28 @@
+OPCIONS = -D_JUDGE_ -D_GLIBCXX_DEBUG -O2 -Wall -Wextra -Werror -Wno-sign-compare -std=c++11
+
+
+program.exe: program.o Cjt_Idiomes.o Idioma.o Taula_de_freq.o Treecode.o
+	g++ -o program.exe program.o Cjt_Idiomes.o Idioma.o Taula_de_freq.o Treecode.o $(OPCIONS)
+	rm -f *.o
+	
+program.o: program.cc Cjt_Idiomes.hh Idioma.hh Taula_de_freq.hh Treecode.hh BinTree.hh
+	g++ -c program.cc $(OPCIONS)
+
+Cjt_Idiomes.o: Cjt_Idiomes.cc Idioma.hh
+	g++ -c Cjt_Idiomes.cc $(OPCIONS)
+
+Idioma.o: Idioma.cc Taula_de_freq.hh BinTree.hh
+	g++ -c Idioma.cc  $(OPCIONS)
+
+Taula_de_freq.o: Taula_de_freq.cc
+	g++ -c Taula_de_freq.cc  $(OPCIONS)
+
+Treecode.o: Treecode.cc
+	g++ -c Treecode.cc $(OPCIONS)
+	
+practica.tar: program.cc Cjt_Idiomes.cc Cjt_Idiomes.hh Idioma.cc Idioma.hh Taula_de_freq.cc Taula_de_freq.hh Treecode.cc Treecode.hh
+	tar -cvf practica.tar program.cc Cjt_Idiomes.cc Cjt_Idiomes.hh Idioma.cc Idioma.hh Taula_de_freq.cc Taula_de_freq.hh Treecode.cc Treecode.hh Makefile
+	
+clean:
+	rm -f *.o
+	rm -f *.exe

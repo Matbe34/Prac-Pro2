@@ -1,0 +1,30 @@
+g++ -o program.exe *.o 
+Cjt_Idiomes.o: In function `Cjt_Idiomes::omplir_cjt_idiomes()':
+Cjt_Idiomes.cc:(.text+0x179): undefined reference to `Idioma::Idioma(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+Cjt_Idiomes.cc:(.text+0x1df): undefined reference to `Idioma::~Idioma()'
+Cjt_Idiomes.cc:(.text+0x234): undefined reference to `Idioma::~Idioma()'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::actualitza_idioma(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+Cjt_Idiomes.cc:(.text+0x2f5): undefined reference to `Idioma::consultar_taula_freq()'
+Cjt_Idiomes.cc:(.text+0x32f): undefined reference to `Idioma::actualitzar_treecode()'
+Cjt_Idiomes.cc:(.text+0x34a): undefined reference to `Idioma::actualitza_taulacodis()'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::afegir_modificar_idioma(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+Cjt_Idiomes.cc:(.text+0x44b): undefined reference to `Idioma::Idioma(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+Cjt_Idiomes.cc:(.text+0x4b1): undefined reference to `Idioma::~Idioma()'
+Cjt_Idiomes.cc:(.text+0x55c): undefined reference to `Idioma::~Idioma()'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::escriure_treecode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+Cjt_Idiomes.cc:(.text+0x6d0): undefined reference to `Idioma::escriure_treecode()'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::escriure_taulacodis(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+Cjt_Idiomes.cc:(.text+0x876): undefined reference to `Idioma::escriure_taulacodis(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::escriure_taulafreq(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+Cjt_Idiomes.cc:(.text+0x9a2): undefined reference to `Idioma::escriure_taulafreq()'
+Cjt_Idiomes.o: In function `Cjt_Idiomes::escriure_cjt()':
+Cjt_Idiomes.cc:(.text+0xaae): undefined reference to `Idioma::consultar_taula_freq()'
+Cjt_Idiomes.o: In function `std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Idioma>::~pair()':
+Cjt_Idiomes.cc:(.text._ZNSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6IdiomaED2Ev[_ZNSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6IdiomaED5Ev]+0x18): undefined reference to `Idioma::~Idioma()'
+Cjt_Idiomes.o: In function `Idioma::Idioma(Idioma const&)':
+Cjt_Idiomes.cc:(.text._ZN6IdiomaC2ERKS_[_ZN6IdiomaC5ERKS_]+0x86): undefined reference to `Treecode::~Treecode()'
+Cjt_Idiomes.o: In function `std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, Idioma>::~pair()':
+Cjt_Idiomes.cc:(.text._ZNSt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6IdiomaED2Ev[_ZNSt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6IdiomaED5Ev]+0x18): undefined reference to `Idioma::~Idioma()'
+collect2: error: ld returned 1 exit status
+Makefile:4: recipe for target 'program.exe' failed
+make: *** [program.exe] Error 1
