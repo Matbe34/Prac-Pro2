@@ -26,6 +26,7 @@ void Idioma::actualitzar_treecode(){
 }
 
 void Idioma::actualitza_taulacodis(){
+    taulacodis.clear();
     map<string,int> taulafreq1 = taulafreq.consultar_taula_freq();
     map<string,int>::iterator it = taulafreq1.begin();
     while(it != taulafreq1.end()){
