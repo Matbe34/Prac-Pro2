@@ -45,7 +45,7 @@ void Idioma::modifica_taula_freq(Taula_de_freq& tauladefreq){
     taulafreq = tauladefreq;
 }
 
-void Idioma::codifica(string& text, int& i, string& resultat){
+void Idioma::codifica(string& text, int& i, string& resultat, string& pas){
     char t = text[i];
     string po;
     po = t;
@@ -65,6 +65,7 @@ void Idioma::codifica(string& text, int& i, string& resultat){
             taulacodis.erase(po);
             string s;
             resultat = s;
+            pas = po;
         }  
         ++i;
     }

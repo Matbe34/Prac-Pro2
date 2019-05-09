@@ -117,15 +117,25 @@ void Cjt_Idiomes::codifica(string idioma, string& text) {
     int i = 0;
     bool primer = true, b = true;
     string resultat;
+    string po;
     while(text.length() > i){
         if(not primer and resultat.length() == 0){
             b = false;
             break;
         }
-        it->second.codifica(text,i,resultat);
+        it->second.codifica(text,i,resultat,po);
         primer = false;
     }
-    if(resultat.length() == 0 and b)cout << "El texto no pertenece al idioma; primer caracter que falla: " << text[0] << endl << endl;
+    if(resultat.length() == 0 and b){
+        string s;
+        s += text[0];
+        if(s == text)cout << "El texto no pertenece al idioma; primer caracter que falla: " << text[0] << endl << endl;
+        else {
+            s += text[1];
+            cout << "El texto no pertenece al idioma; primer caracter que falla: " << s << endl << endl;
+        }
+    }
     else if(b)cout << resultat << endl << endl;
-    else cout << "El texto no pertenece al idioma; primer caracter que falla: " << text[i+1] << endl << endl;
+    else if(text[i] < 127 and text[i] > 32)cout << "El texto no pertenece al idioma; primer caracter que falla: " << text[i+1] << endl << endl; //Distingir entre char i char especial
+    else cout << "El texto no pertenece al idioma; primer caracter que falla: " << po << endl << endl;
 }
