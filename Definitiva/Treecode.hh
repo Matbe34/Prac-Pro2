@@ -18,11 +18,11 @@ private:
     
     BinTree<pair<string, int> > treecode;
     
-    void escriure_BinTree_preordre(const BinTree <pair<string, int> >& a)const; //static?
+    static void escriure_BinTree_preordre(const BinTree <pair<string, int> >& a); 
     
-    void escriure_BinTree_inordre(const BinTree <pair<string, int> >& a)const; //static?
+    static void escriure_BinTree_inordre(const BinTree <pair<string, int> >& a); 
     
-    bool cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi); //static?
+    bool cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi);
     
     
 public:
@@ -37,7 +37,7 @@ public:
     
     Treecode(const pair<string, int>& a);
     
-    Treecode(const pair<string, int>& a, const BinTree<pair<string, int> >& left, const BinTree<pair<string, int> >& right); //private
+    Treecode(const pair<string, int>& a, const Treecode& left, const Treecode& right);
     
     ~Treecode();
     
@@ -50,7 +50,7 @@ public:
     */
     void actualitzar_treecode (Taula_de_freq& taula);
     
-    void decodifica(const BinTree <pair<string, int> >& treecode, string& text, int& i, string& resposta, bool& b); //private
+    void decodifica(const Treecode& arbre, string& text, int& i, string& resposta, bool& b);
     
 //  Consultores
     

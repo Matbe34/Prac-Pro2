@@ -13,8 +13,8 @@ Treecode::Treecode(const pair<string, int>& a){
     treecode = BinTree <pair<string, int> > (a);
 }
 
-Treecode::Treecode(const pair<string, int>& a, const BinTree<pair<string, int> >& left, const BinTree<pair<string, int> >& right){
-    treecode = BinTree <pair<string, int> > (a,left,right);
+Treecode::Treecode(const pair<string, int>& a, const Treecode& left, const Treecode& right){
+    treecode = BinTree <pair<string, int> > (a,left.treecode,right.treecode);
 }
 
 struct comp {
@@ -55,7 +55,10 @@ void Treecode::actualitzar_treecode (Taula_de_freq& taula){
             if(s < se)s = s + se;
             else s = se + s;
         }
-        Treecode aux1 (pair<string,int> (s,n),left,right);
+        Treecode a,t;
+        a.treecode = left;
+        t.treecode = right;
+        Treecode aux1 (pair<string,int> (s,n),a,t);
         aux1.treecode.right() = right;
         pair<set<Treecode,comp>::iterator,bool> ret;
         ret = cjarbres.insert(aux1);
@@ -72,20 +75,28 @@ void Treecode::consultar_paraula(string& codi){
     codi = "a";
 }
 
-void Treecode::decodifica(const BinTree <pair<string, int> >& treecode, string& text, int& i, string& resposta, bool& b){
+void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& resposta, bool& b){
     if(text[i] == '1'){
-        if(treecode.right().right().empty()){
-            resposta += treecode.right().value().first;
+        if(arbre.treecode.right().right().empty()){
+            resposta += arbre.treecode.right().value().first;
             ++i;
         }
-        else decodifica(treecode.right(),text,++i,resposta,b);
+        else {
+            Treecode arbre1;
+            arbre1.treecode = arbre.treecode.right();
+            decodifica(arbre1,text,++i,resposta,b);
+        }
     }
     else if(text[i] == '0'){
-        if(treecode.left().right().empty()){
-            resposta += treecode.left().value().first;
+        if(arbre.treecode.left().right().empty()){
+            resposta += arbre.treecode.left().value().first;
             ++i;
         }
-        else decodifica(treecode.left(),text,++i,resposta,b);
+        else {
+            Treecode arbre1;
+            arbre1.treecode = arbre.treecode.left();
+            decodifica(arbre1,text,++i,resposta,b);
+        }
     }
     else {
         string s;
@@ -100,7 +111,7 @@ void Treecode::escriure_treecode(const Treecode& arbre)const{
     escriure_BinTree_inordre(arbre.treecode);
 }
 
-void Treecode::escriure_BinTree_preordre(const BinTree <pair<string, int> >& a)const{
+void Treecode::escriure_BinTree_preordre(const BinTree <pair<string, int> >& a){
     if(not a.empty()){
         pair<string,int> x = a.value();
         cout << x.first << " " << x.second<< endl;
@@ -109,7 +120,7 @@ void Treecode::escriure_BinTree_preordre(const BinTree <pair<string, int> >& a)c
     }
 }
 
-void Treecode::escriure_BinTree_inordre(const BinTree <pair<string, int> >& a)const{
+void Treecode::escriure_BinTree_inordre(const BinTree <pair<string, int> >& a){
     if(not a.empty()){
         escriure_BinTree_inordre(a.left());
         pair<string,int> x = a.value();

@@ -76,7 +76,7 @@ void Idioma::decodifica(string& text, int& i, string& resultat, bool& b, int& ul
     if(text.length() == 0)resultat = treecode.consultar_arbre().value().first;
     else {
         while(i < text.length()){
-            treecode.decodifica(treecode.consultar_arbre(),text,i,resultat,b);
+            treecode.decodifica(treecode,text,i,resultat,b);
             if(resultat.length() != 0)ultim = i;
         }
         if(resultat.length() == 0)b=false;
