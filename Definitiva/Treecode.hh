@@ -18,6 +18,13 @@ private:
     
     BinTree<pair<string, int> > treecode;
     
+    void escriure_BinTree_preordre(const BinTree <pair<string, int> >& a)const; //static?
+    
+    void escriure_BinTree_inordre(const BinTree <pair<string, int> >& a)const; //static?
+    
+    bool cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi); //static?
+    
+    
 public:
     
 //  Constructora i destructora
@@ -30,7 +37,7 @@ public:
     
     Treecode(const pair<string, int>& a);
     
-    Treecode(const pair<string, int>& a, const BinTree<pair<string, int> >& left, const BinTree<pair<string, int> >& right);
+    Treecode(const pair<string, int>& a, const BinTree<pair<string, int> >& left, const BinTree<pair<string, int> >& right); //private
     
     ~Treecode();
     
@@ -43,7 +50,7 @@ public:
     */
     void actualitzar_treecode (Taula_de_freq& taula);
     
-    void decodifica(const BinTree <pair<string, int> >& treecode, string& text, int& i, string& resposta, bool& b);
+    void decodifica(const BinTree <pair<string, int> >& treecode, string& text, int& i, string& resposta, bool& b); //private
     
 //  Consultores
     
@@ -57,8 +64,6 @@ public:
     
 //     bool string_esta(string& gran, string& busca);
     
-    bool cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi);
-    
     
 //  Escriptura
     
@@ -67,9 +72,5 @@ public:
       \post S'ha escrit pel canal estàndard de sortida el Treecode
     */
     void escriure_treecode (const Treecode& arbre)const;
-    
-    void escriure_BinTree_preordre(const BinTree <pair<string, int> >& a)const;
-    
-    void escriure_BinTree_inordre(const BinTree <pair<string, int> >& a)const;
     
 };

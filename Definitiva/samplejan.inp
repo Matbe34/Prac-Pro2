@@ -1,0 +1,104 @@
+2     
+
+idioma_corto
+2
+k 0
+: 0
+
+idioma_medio
+9
+! 2
+¡ 2
+ü 2
+* 2
+& 2
+" 2
+# 2
+? 2
+¿ 2
+
+tabla_frec idioma_corto
+
+tabla_frec idioma_medio
+
+treecode idioma_corto
+
+treecode idioma_medio
+
+codigos idioma_corto todos
+
+codigos idioma_corto :
+
+codigos idioma_corto 7
+
+codigos idioma_medio todos
+ 
+codigos idioma_medio ü
+
+codigos idioma_medio %
+
+codifica idioma_corto
+::::kk:
+
+codifica idioma_corto
+flijrejighirosg
+
+codifica idioma_corto 
+kk::k:ll:k
+
+decodifica idioma_corto
+00010010101001
+
+codifica idioma_medio
+ü*!!?¿¡&&#
+
+codifica idioma_medio
+üüü**??¿!jj*ü
+
+decodifica idioma_medio
+110111111100001011
+
+decodifica idioma_medio
+001101001101011
+
+anadir/modificar idioma_corto
+3
+k 8
+j 3
+* 0
+
+tabla_frec idioma_corto
+
+treecode idioma_corto
+
+codigos idioma_medio todos
+
+codifica idioma_corto
+:jj::kk:
+
+codifica idioma_corto
+jj::k:lkjK
+
+anadir/modificar idioma_cortisimo
+3
+6 7
+( 11
+l 12
+
+tabla_frec idioma_cortisimo
+
+treecode idioma_cortisimo
+
+codigos idioma_cortisimo todos
+
+codigos idioma_cortisimo 6
+
+codigos idioma_cortisimo 9
+
+codifica idioma_cortisimo
+6((ll6((l
+
+codifica idioma_cortisimo
+(()(666l6l6
+
+fin

@@ -60,10 +60,10 @@ public:
     */
     Taula_de_freq consultar_taula_freq();
     
-    void codifica(string& text, int& i, string& s, string& pas);
+    void codifica(string& text, int& i, string& s);
     
-    void decodifica(string& text, int& i, string& resultat, bool& b);
-    
+    void decodifica(string& text, int& i, string& resultat, bool& b, int& ultim);
+        
     // Lectura i escriptura
     
     /** @brief Escriu el treecode de l'idioma del paràmetre implícit.

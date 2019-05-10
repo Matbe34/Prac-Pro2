@@ -24,7 +24,6 @@ struct comp {
     }
 };
 
-
 Treecode::~Treecode(){}
 
 void Treecode::actualitzar_treecode (Taula_de_freq& taula){
@@ -75,14 +74,14 @@ void Treecode::consultar_paraula(string& codi){
 
 void Treecode::decodifica(const BinTree <pair<string, int> >& treecode, string& text, int& i, string& resposta, bool& b){
     if(text[i] == '1'){
-        if(treecode.right().right().empty() and treecode.right().left().empty()){
+        if(treecode.right().right().empty()){
             resposta += treecode.right().value().first;
             ++i;
         }
         else decodifica(treecode.right(),text,++i,resposta,b);
     }
     else if(text[i] == '0'){
-        if(treecode.left().right().empty() and treecode.left().left().empty()){
+        if(treecode.left().right().empty()){
             resposta += treecode.left().value().first;
             ++i;
         }
