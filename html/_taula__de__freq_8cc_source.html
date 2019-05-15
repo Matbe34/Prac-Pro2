@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica PRO2 - Ferran Mateu: Fichero Fuente Taula_de_freq.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica PRO2 - Ferran Mateu
+   &#160;<span id="projectnumber">Inici: 12 abril 2019, Final: 21 de maig 2019</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Taula_de_freq.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_taula__de__freq_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_taula__de__freq_8hh.html">Taula_de_freq.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a57b8d780af285f09746da0a96dfd9d61">   10</a></span>&#160;<a class="code" href="class_taula__de__freq.html#a57b8d780af285f09746da0a96dfd9d61">Taula_de_freq::Taula_de_freq</a>() {}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a046a70a0ea38d03da605998cf99d5335">   12</a></span>&#160;<a class="code" href="class_taula__de__freq.html#a046a70a0ea38d03da605998cf99d5335">Taula_de_freq::~Taula_de_freq</a>() {}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a59add68c3c129a8908907b038d6344f8">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_taula__de__freq.html#a59add68c3c129a8908907b038d6344f8">Taula_de_freq::sumar_taules</a> (<a class="code" href="class_taula__de__freq.html">Taula_de_freq</a>&amp; b){</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    map&lt;string,int&gt; btaula = b.<a class="code" href="class_taula__de__freq.html#a438f3ce025ca433420891fead5affae4">consultar_taula_freq</a>();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    map&lt;string,int&gt; ::iterator it1 = taula.begin();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    map&lt;string,int&gt; ::iterator it2 = btaula.begin();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">while</span>(not taula.empty()){</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span>(it2 != btaula.end()){</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            it1 = taula.find(it2-&gt;first);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span>(it1 != taula.end())it2-&gt;second = it2-&gt;second + it1-&gt;second;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            taula.erase(it2-&gt;first);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            ++it2;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">else</span> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            it1 = taula.begin();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            btaula.insert(make_pair(it1-&gt;first,it1-&gt;second));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            taula.erase(it1-&gt;first);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    b.<a class="code" href="class_taula__de__freq.html#a48ab25af50446a155435d87089e1aab0">modifica_taula</a>(btaula);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a6e3d7bfaa7227f9b7603864c7a3da2cf">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_taula__de__freq.html#a6e3d7bfaa7227f9b7603864c7a3da2cf">Taula_de_freq::llegir_taula_freq</a> (){</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> n;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    cin &gt;&gt; n;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">string</span> a;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> p;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n; ++i){</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cin &gt;&gt; a &gt;&gt; p;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        taula.insert(pair &lt;string,int&gt; (a,p));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a48ab25af50446a155435d87089e1aab0">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_taula__de__freq.html#a48ab25af50446a155435d87089e1aab0">Taula_de_freq::modifica_taula</a>(<span class="keyword">const</span> map &lt;string, int&gt;&amp; btaula){</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   taula = btaula;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a438f3ce025ca433420891fead5affae4">   49</a></span>&#160;map &lt;string, int&gt; <a class="code" href="class_taula__de__freq.html#a438f3ce025ca433420891fead5affae4">Taula_de_freq::consultar_taula_freq</a>(){</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> taula;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_taula__de__freq.html#a60e643811c232a7ca679c2bf43dcb79c">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_taula__de__freq.html#a60e643811c232a7ca679c2bf43dcb79c">Taula_de_freq::escriure_taulafreq</a>(<a class="code" href="class_taula__de__freq.html">Taula_de_freq</a>&amp; taulafreq){</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    map&lt;string,int&gt;::iterator it1;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span>(it1 = taulafreq.<a class="code" href="class_taula__de__freq.html#a2c7db75db1ccbbe347de775844f3bbd7">taula</a>.begin(); it1 != taulafreq.<a class="code" href="class_taula__de__freq.html#a2c7db75db1ccbbe347de775844f3bbd7">taula</a>.end(); ++it1){</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        cout &lt;&lt; it1-&gt;first &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; it1-&gt;second &lt;&lt; endl;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="class_taula__de__freq_html_a60e643811c232a7ca679c2bf43dcb79c"><div class="ttname"><a href="class_taula__de__freq.html#a60e643811c232a7ca679c2bf43dcb79c">Taula_de_freq::escriure_taulafreq</a></div><div class="ttdeci">void escriure_taulafreq(Taula_de_freq &amp;taula)</div><div class="ttdoc">Escriu la taula de freqüències del paràmetre implícit. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00053">Taula_de_freq.cc:53</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a2c7db75db1ccbbe347de775844f3bbd7"><div class="ttname"><a href="class_taula__de__freq.html#a2c7db75db1ccbbe347de775844f3bbd7">Taula_de_freq::taula</a></div><div class="ttdeci">map&lt; string, int &gt; taula</div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8hh_source.html#l00023">Taula_de_freq.hh:23</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a59add68c3c129a8908907b038d6344f8"><div class="ttname"><a href="class_taula__de__freq.html#a59add68c3c129a8908907b038d6344f8">Taula_de_freq::sumar_taules</a></div><div class="ttdeci">void sumar_taules(Taula_de_freq &amp;b)</div><div class="ttdoc">Suma dues taules de freqüències, una que rep pel paràmetre per referència i l&amp;#39;altre la llegeix del ca...</div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00014">Taula_de_freq.cc:14</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="_taula__de__freq_8hh_html"><div class="ttname"><a href="_taula__de__freq_8hh.html">Taula_de_freq.hh</a></div><div class="ttdoc">Especificació de la classe Taula_de_freq. </div></div>
+<div class="ttc" id="class_taula__de__freq_html_a57b8d780af285f09746da0a96dfd9d61"><div class="ttname"><a href="class_taula__de__freq.html#a57b8d780af285f09746da0a96dfd9d61">Taula_de_freq::Taula_de_freq</a></div><div class="ttdeci">Taula_de_freq()</div><div class="ttdoc">Crea una taula de freqüències buida. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00010">Taula_de_freq.cc:10</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html"><div class="ttname"><a href="class_taula__de__freq.html">Taula_de_freq</a></div><div class="ttdoc">Representa una Taula_de_freq. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8hh_source.html#l00019">Taula_de_freq.hh:19</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a6e3d7bfaa7227f9b7603864c7a3da2cf"><div class="ttname"><a href="class_taula__de__freq.html#a6e3d7bfaa7227f9b7603864c7a3da2cf">Taula_de_freq::llegir_taula_freq</a></div><div class="ttdeci">void llegir_taula_freq()</div><div class="ttdoc">Llegeix una taula de freqüències del canal estàndard d&amp;#39;entrada. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00034">Taula_de_freq.cc:34</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a48ab25af50446a155435d87089e1aab0"><div class="ttname"><a href="class_taula__de__freq.html#a48ab25af50446a155435d87089e1aab0">Taula_de_freq::modifica_taula</a></div><div class="ttdeci">void modifica_taula(const map&lt; string, int &gt; &amp;btaula)</div><div class="ttdoc">Modifica la taula del paràmetre implícit canviant-la per la rebuda com a paràmetre per referència...</div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00045">Taula_de_freq.cc:45</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a438f3ce025ca433420891fead5affae4"><div class="ttname"><a href="class_taula__de__freq.html#a438f3ce025ca433420891fead5affae4">Taula_de_freq::consultar_taula_freq</a></div><div class="ttdeci">map&lt; string, int &gt; consultar_taula_freq()</div><div class="ttdoc">Consulta la taula de freqüències de l&amp;#39;idioma del paràmetre implícit. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00049">Taula_de_freq.cc:49</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html_a046a70a0ea38d03da605998cf99d5335"><div class="ttname"><a href="class_taula__de__freq.html#a046a70a0ea38d03da605998cf99d5335">Taula_de_freq::~Taula_de_freq</a></div><div class="ttdeci">~Taula_de_freq()</div><div class="ttdoc">És la destructora de la classe. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8cc_source.html#l00012">Taula_de_freq.cc:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
