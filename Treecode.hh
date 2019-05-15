@@ -76,7 +76,7 @@ public:
 
 //  Modificodores
 
-    /** @brief Actualitza un Treecode
+    /** @brief Actualitza un Treecode a partir d'una taula de freqüències
       \pre El Treecode existeix
       \post S'ha actualitzat el Treecode
     */
