@@ -1,12 +1,13 @@
 2
 
+// Creem 2 idiomes, un sense amb un caràcter especial en la última posició i el segon amb només caràcters especials i tots amb la mateixa frequència.
 idioma_corto
 5
 2 5
 è 6
 e 8
 9 43
-: 0
+: 3
 
 idioma_medio
 9
@@ -20,6 +21,7 @@ idioma_medio
 - 2
 = 2
 
+//Treiem per pantalla la taula de freqüències, el treecode i la taula de codis per comprovar que s'hagin llegit be
 tabla_frec idioma_corto
 
 treecode idioma_corto
@@ -32,10 +34,13 @@ treecode idioma_medio
 
 codigos idioma_medio todos
 
+
+//Modifiquem l'idioma de caràcters especials per comprovar que funcioni la operació i actualitzi bé totes les dades
 anadir/modificar idioma_medio
 1
 @ 3
 
+//comprovem que s'hagi actualitzat be l'idioma
 tabla_frec idioma_medio
 
 treecode idioma_medio
@@ -44,6 +49,7 @@ codigos idioma_medio todos
 
 codigos idioma_medio @
 
+//Provem les funcions de codificar per mirar que funcionin bé, també amb idiomes que no existeixen
 codifica idioma_corto
 29::92:è:ee::èe
 
@@ -53,6 +59,7 @@ codifica idioma_medio
 codifica idioma_largo
 adg590"%&"·
 
+//Provem les funcions de decodificar per mirar que funcionin bé, també amb idiomes que no existeixen
 decodifica idioma_corto
 111101010001110001001
 
@@ -65,6 +72,7 @@ decodifica idioma_corto
 decodifica idioma_medio
 11111000011111111111101101010001010010
 
+//Afegim un idioma nou que sigui molt llarg
 anadir/modificar idioma_largo
 19
 a 1
@@ -87,12 +95,14 @@ t 4
 r 8
 e 2
 
+//Comprovem que el nou idioma s'hagi llegit correctament
 tabla_frec idioma_largo
 
 treecode idioma_largo
 
 codigos idioma_largo todos
 
+//Consultem codis que no pertanyin als idiomes
 codigos idioma_corto +
 
 codigos idioma_medio ç

@@ -1,3 +1,4 @@
+//Tant les taules, com els treecodes, com les taules dde codis es llegeixen correctament
 Tabla de frecuencias de idioma_corto:
 2 5
 9 43
@@ -94,6 +95,7 @@ Codigos de idioma_medio:
 @ 101
 ¿ 110
 
+//Veiem que l'idioma s'ha modificat i que s'ha actualitzat correctament
 Modificado idioma_medio
 
 Tabla de frecuencias de idioma_medio:
@@ -159,6 +161,7 @@ Codigos de idioma_medio:
 Codigo de @ en idioma_medio:
 @ 10
 
+//Observem que les funcions de codificar i decodificar funcionen correctament
 Codifica en idioma_corto el texto:
 29::92:è:ee::èe
 0101101000100101010100011010000000100010001100
@@ -187,6 +190,8 @@ Decodifica en idioma_medio el texto:
 11111000011111111111101101010001010010
 -@.---¿?@=??
 
+
+//Veiem com l'idioma s'ha afegit i que s'ha llegit correctament
 Anadido idioma_largo
 
 Tabla de frecuencias de idioma_largo:
@@ -309,6 +314,7 @@ u 101
 y 11
 ñ 001011
 
+//Els codis que no pertanyen als idiomes es porocessen correctament
 Codigo de + en idioma_corto:
 El idioma no existe o el caracter no esta en el idioma
 
