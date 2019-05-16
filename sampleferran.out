@@ -318,3 +318,7 @@ El idioma no existe o el caracter no esta en el idioma
 Codigo de x en idioma_largo:
 El idioma no existe o el caracter no esta en el idioma
 
+Codifica en idioma_medio el texto:
+!?¿---++-====!?¿?¿.,.,+-+&
+El texto no pertenece al idioma; primer caracter que falla: &
+
