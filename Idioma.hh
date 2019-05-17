@@ -32,7 +32,7 @@ private:
     */
     map <string, string> taulacodis;
 
-    map <sting, string> tauladec;
+    map <string, string> tauladec;
 
 
 public:
@@ -93,7 +93,7 @@ public:
       \post A "resultat" hi ha la decodificació de "text", si no es pot codificar "text" en l'idioma llavors "resultat" és buit i "i" indica la posició del l'últim caràcter que s'ha pogut decodificar.
       A "b" indiquem amb "false" si no s'ha pogut fer la decodificació.
     */
-    void decodifica(string& text, int& i, string& resultat, bool& b, int& ultim);
+    void decodifica(string& text, int& i, string& resultat);
 
 
 // Lectura i escriptura

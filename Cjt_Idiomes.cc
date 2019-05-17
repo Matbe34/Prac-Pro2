@@ -96,12 +96,12 @@ void Cjt_Idiomes::escriure_taulafreq(string nomidioma){
 
 void Cjt_Idiomes::decodifica(string idioma, string& text) {
     map<string,Idioma>::iterator it = cjt_idiomes.find(idioma);
-    int i = 0, ultim = 0;
+    int i = 0;
     string resultat;
-    bool b = true;
-    it->second.decodifica(text,i,resultat,b,ultim);
-    if(b)cout << resultat << endl << endl;
-    else cout << "El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: " << ultim << endl << endl;
+    // bool b = true;
+    it->second.decodifica(text,i,resultat);
+    // if(b)cout << resultat << endl << endl;
+    // else cout << "El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: " << ultim << endl << endl;
 }
 
 void Cjt_Idiomes::codifica(string idioma, string& text) {
