@@ -32,6 +32,8 @@ private:
     */
     map <string, string> taulacodis;
 
+    map <sting, string> tauladec;
+
 
 public:
 

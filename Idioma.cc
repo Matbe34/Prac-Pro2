@@ -73,14 +73,22 @@ void Idioma::codifica(string& text, int& i, string& resultat){
 }
 
 void Idioma::decodifica(string& text, int& i, string& resultat, bool& b, int& ultim){
-    if(text.length() == 0)resultat = "";
-    else {
-        while(i < text.length()){
-            treecode.decodifica(treecode,text,i,resultat);
-            if(resultat.length() != 0)ultim = i;
-        }
-        if(resultat.length() == 0)b=false;
+  i = 0;
+  bool b = true;
+  int count = 0;
+  string codi;
+  while(text.length() > i and b){
+    codi += text[i];
+    if(tauladec.find(codi) != tauladec.end()){
+      resulat += tauladec.find(codi)->second;
+      codi = "";
+      count = i;
+      ++count;
     }
+    ++i;
+  }
+  if(not resultat.empty()) cout << resultat << endl << endl;
+  else cout << "El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: " <<  << endl << endl;
 }
 
 void Idioma::escriure_treecode() {
