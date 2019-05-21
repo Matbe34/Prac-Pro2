@@ -1,0 +1,286 @@
+Codigo de À en idioma_llarg:
+À 11000011
+
+Modificado idioma_llarg
+
+Codigo de À en idioma_llarg:
+À 010001
+
+Tabla de frecuencias de idioma_llarg:
+! 4
+" 4
+# 4
+$ 4
+% 4
+& 4
+' 4
+( 4
+) 4
+* 4
++ 4
+, 4
+- 4
+. 4
+/ 4
+0 4
+1 4
+2 4
+3 4
+4 4
+5 4
+6 4
+7 4
+8 4
+9 4
+: 4
+; 4
+< 4
+= 4
+> 4
+? 4
+@ 4
+A 4
+B 4
+C 4
+D 4
+E 4
+F 4
+G 4
+H 4
+I 4
+J 4
+K 4
+L 4
+M 4
+N 4
+O 4
+P 4
+Q 4
+R 4
+S 4
+T 4
+U 4
+V 4
+W 4
+X 4
+Y 4
+Z 4
+[ 4
+\ 4
+] 4
+^ 4
+_ 4
+` 4
+a 4
+b 4
+c 4
+d 4
+e 4
+f 4
+g 4
+h 4
+i 4
+j 4
+k 4
+l 4
+m 4
+n 4
+o 4
+p 4
+q 4
+r 4
+s 4
+t 4
+u 4
+v 4
+w 4
+x 4
+y 4
+z 4
+{ 4
+| 4
+} 4
+~ 4
+¡ 5
+¢ 5
+£ 5
+¤ 5
+¥ 5
+¦ 5
+§ 5
+¨ 5
+© 5
+ª 5
+« 5
+¬ 5
+® 5
+¯ 5
+° 5
+± 5
+² 5
+³ 5
+´ 5
+µ 5
+¶ 5
+¸ 5
+¹ 5
+º 5
+» 5
+¼ 5
+½ 5
+¾ 5
+¿ 5
+À 15
+Á 5
+Â 5
+Ã 5
+Ä 5
+Å 5
+Æ 5
+Ç 5
+È 5
+É 5
+Ê 5
+Ë 5
+Ì 5
+Í 5
+Î 5
+Ï 5
+Ð 5
+Ñ 5
+Ò 5
+Ó 5
+Ô 5
+Õ 5
+Ö 5
+× 5
+Ø 5
+Ù 5
+Ú 5
+Û 5
+Ü 5
+Ý 5
+Þ 5
+ß 5
+à 5
+á 5
+â 5
+ã 5
+ä 5
+å 5
+æ 5
+ç 5
+è 5
+é 5
+ê 5
+ë 5
+ì 5
+í 5
+î 5
+ï 5
+ð 5
+ñ 5
+ò 5
+ó 5
+ô 5
+õ 5
+ö 5
+÷ 5
+ø 5
+ù 5
+ú 5
+û 5
+ü 5
+ý 5
+þ 5
+ÿ 5
+ı 5
+ƒ 5
+‗ 5
+• 5
+─ 5
+│ 5
+┌ 5
+┐ 5
+└ 5
+┘ 5
+├ 5
+┤ 5
+┬ 5
+┴ 5
+┼ 5
+═ 5
+║ 5
+╔ 5
+╗ 5
+╚ 5
+╝ 5
+╠ 5
+╣ 5
+╦ 5
+╩ 5
+╬ 5
+▀ 5
+▄ 5
+█ 5
+░ 5
+▒ 5
+▓ 5
+■ 5
+
+Codigo de Û en idioma_llarg:
+Û 11011011
+
+Codigo de ¿ en idioma_llarg:
+¿ 11000000
+
+Codigo de ) en idioma_llarg:
+) 01001110
+
+Codigo de b en idioma_llarg:
+b 10000111
+
+Codifica en idioma_llarg el texto:
+4937sjdgl`s´sesûs´sds?!¿*SÇFDF^Ç¨!"*"
+01011001010111100101100001011100100110001000111110001001100011001001000110000101100110001011011010011000100010101001100011111011100110001011011010011000100010011001100001100100010000101100000001001111011110001100011101101011011010010110101110000011110001111010101101000010010000110100111101000011
+
+Decodifica en idioma_llarg el texto:
+11111110101010001000011100101110111011110000001010101100010011
+þ¥b╦R\1╚
+
+Codigos de idioma_normal:
+7 1011
+8 11
+_ 00
+a 1010
+Ç 100
+ô 01
+
+Decodifica en idioma_normal el texto:
+1011110010101000110110010101000111
+78_aÇô7_aÇô8
+
+Codifica en idioma_normal el texto:
+87_8778887Çaa8a
+111011001110111011111111101110010101010111010
+
+Codifica en idioma_normal el texto:
+8787__ÇôÇa8Çô
+11101111101100001000110010101110001
+
+Codifica en idioma_normal el texto:
+78877__Ç_78aôÔ
+El texto no pertenece al idioma; primer caracter que falla: Ô
+
+Decodifica en idioma_normal el texto:
+11011110010100000101000010001001100000001111111100
+8ô8Ça__a_ô_ô_8___ô888Ç
+
+Decodifica en idioma_normal el texto:
+110111100101000001010000100010011000000011111111001110
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 52
+
+Decodifica en idioma_normal el texto:
+11011110010100000101000010001001100000001111111100111
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 52
+

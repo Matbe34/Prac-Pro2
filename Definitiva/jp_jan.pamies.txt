@@ -1,0 +1,565 @@
+ENTRADA COMENTADA
+
+//En aquest joc de proves comprovarem casos no comprovats al joc de proves públic quan es modifica un idioma.
+
+1    
+
+idioma
+5
+k 3
+p 8
+î 4
+] 3  
+: 2
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+/*Cridarem la funció de modificar l'idioma però no afegirem res i cridarem la taula de freqüències, el treecode i la 
+  taula de codis per veure si l'idioma s'ha modificat. */
+  
+anadir/modificar idioma
+0
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+/*Cridarem la funció de modificar l'idioma i modificarem la freqüència de caràcters ja existents. Després cridarem
+  la taula de freqüències, el treecode i la taula de codis per veure si l'idioma s'ha modificat. */
+  
+anadir/modificar idioma
+3
+: 8
+î 5
+k 1
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+/*Cridarem la funció de modificar l'idioma i afegirem nous caràcters a l'idioma. Després cridarem la taula de freqüències,
+  el treecode i la taula de codis per veure si l'idioma s'ha modificat. També cridarem el codi de caràcters de l'idioma 
+  (existents i no existents), codificarem i decodificarem per veure si després de modificar les funcions segueix 
+  treballant correctament. */
+  
+anadir/modificar idioma
+3
+@ 6
+& 1
+Ç 7
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+codigos idioma "
+
+codigos idioma @
+
+codifica idioma
+&@::îkp]]Ç:&ppkp:]]î
+
+codifica idioma
+@@&]]kpkpk::î"kÇÇp
+
+decodifica idioma 
+0110100110111010111010100011010110101
+
+decodifica idioma
+11010100010100101010010111010010111011100
+
+fin
+
+
+
+
+
+
+
+ENTRADA SIN COMENTAR
+
+
+1    
+
+idioma
+5
+k 3
+p 8
+î 4
+] 3  
+: 2
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+anadir/modificar idioma
+0
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+anadir/modificar idioma
+3
+: 8
+î 5
+k 1
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+anadir/modificar idioma
+3
+@ 6
+& 1
+Ç 7
+
+tabla_frec idioma
+
+treecode idioma
+
+codigos idioma todos
+
+codigos idioma "
+
+codigos idioma @
+
+codifica idioma
+&@::îkp]]Ç:&ppkp:]]î
+
+codifica idioma
+@@&]]kpkpk::î"kÇÇp
+
+decodifica idioma 
+0110100110111010111010100011010110101
+
+decodifica idioma
+11010100010100101010010111010010111011100
+
+fin
+
+
+
+
+
+
+
+SALIDA COMENTADA
+
+//Taula de freqüència, treecode i taula de codis de l'idioma sense modificar.
+
+Tabla de frecuencias de idioma:
+: 2
+] 3
+k 3
+p 8
+î 4
+
+Treecode de idioma:
+recorrido en preorden:
+:]kîp 20
+p 8
+:]kî 12
+:] 5
+: 2
+] 3
+kî 7
+k 3
+î 4
+recorrido en inorden:
+p 8
+:]kîp 20
+: 2
+:] 5
+] 3
+:]kî 12
+k 3
+kî 7
+î 4
+
+Codigos de idioma:
+: 100
+] 101
+k 110
+p 0
+î 111
+
+Modificado idioma
+
+/*Taula de freqüència, treecode i taula de codis de l'idioma quan l'hem modificat però sense haver-li afegit res. Veiem que,     
+  evidentment, res ha canviat. */
+
+Tabla de frecuencias de idioma:
+: 2
+] 3
+k 3
+p 8
+î 4
+
+Treecode de idioma:
+recorrido en preorden:
+:]kîp 20
+p 8
+:]kî 12
+:] 5
+: 2
+] 3
+kî 7
+k 3
+î 4
+recorrido en inorden:
+p 8
+:]kîp 20
+: 2
+:] 5
+] 3
+:]kî 12
+k 3
+kî 7
+î 4
+
+Codigos de idioma:
+: 100
+] 101
+k 110
+p 0
+î 111
+
+Modificado idioma
+
+/*Taula de freqüència, treecode i taula de codis de l'idioma quan hem canviat només la freqüència de caràcters ja existents.
+  Veiem que canvia la taula de freqüència, i a partir d'això, també canviarà el treecode i la taula de codis. */
+
+Tabla de frecuencias de idioma:
+: 10
+] 3
+k 4
+p 8
+î 9
+
+Treecode de idioma:
+recorrido en preorden:
+:î]kp 34
+]kp 15
+]k 7
+] 3
+k 4
+p 8
+:î 19
+î 9
+: 10
+recorrido en inorden:
+] 3
+]k 7
+k 4
+]kp 15
+p 8
+:î]kp 34
+î 9
+:î 19
+: 10
+
+Codigos de idioma:
+: 11
+] 000
+k 001
+p 01
+î 10
+
+Modificado idioma
+
+/*Taula de freqüència, treecode i taula de codis de l'idioma quan hem afegit caràcters que no existien en l'idioma. Veiem
+  que canvia la taula de freqüència, i a partir d'això, també canviarà el treecode i la taula de codis. */
+  
+Tabla de frecuencias de idioma:
+& 1
+: 10
+@ 6
+] 3
+k 4
+p 8
+Ç 7
+î 9
+
+Treecode de idioma:
+recorrido en preorden:
+&]kp@Ç:î 48
+:î 19
+î 9
+: 10
+&]kp@Ç 29
+@Ç 13
+@ 6
+Ç 7
+&]kp 16
+&]k 8
+&] 4
+& 1
+] 3
+k 4
+p 8
+recorrido en inorden:
+î 9
+:î 19
+: 10
+&]kp@Ç:î 48
+@ 6
+@Ç 13
+Ç 7
+&]kp@Ç 29
+& 1
+&] 4
+] 3
+&]k 8
+k 4
+&]kp 16
+p 8
+
+Codigos de idioma:
+& 11000
+: 01
+@ 100
+] 11001
+k 1101
+p 111
+Ç 101
+î 00
+
+//Cridem codis de caràcters d'un idioma modificat, codifiquem i decodifiquem, cosa que no fa el joc de proves públic.
+
+Codigo de " en idioma:
+El idioma no existe o el caracter no esta en el idioma
+
+Codigo de @ en idioma:
+@ 100
+
+Codifica en idioma el texto:
+&@::îkp]]Ç:&ppkp:]]î
+11000100010100110111111001110011010111000111111110111101110011100100
+
+Codifica en idioma el texto:
+@@&]]kpkpk::î"kÇÇp
+El texto no pertenece al idioma; primer caracter que falla: "
+
+Decodifica en idioma el texto:
+0110100110111010111010100011010110101
+:Çîkk:k:î:Ç:Ç:
+
+Decodifica en idioma el texto:
+11010100010100101010010111010010111011100
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 37
+
+
+
+
+
+
+SALIDA SIN COMENTAR
+
+Tabla de frecuencias de idioma:
+: 2
+] 3
+k 3
+p 8
+î 4
+
+Treecode de idioma:
+recorrido en preorden:
+:]kîp 20
+p 8
+:]kî 12
+:] 5
+: 2
+] 3
+kî 7
+k 3
+î 4
+recorrido en inorden:
+p 8
+:]kîp 20
+: 2
+:] 5
+] 3
+:]kî 12
+k 3
+kî 7
+î 4
+
+Codigos de idioma:
+: 100
+] 101
+k 110
+p 0
+î 111
+
+Modificado idioma
+
+Tabla de frecuencias de idioma:
+: 2
+] 3
+k 3
+p 8
+î 4
+
+Treecode de idioma:
+recorrido en preorden:
+:]kîp 20
+p 8
+:]kî 12
+:] 5
+: 2
+] 3
+kî 7
+k 3
+î 4
+recorrido en inorden:
+p 8
+:]kîp 20
+: 2
+:] 5
+] 3
+:]kî 12
+k 3
+kî 7
+î 4
+
+Codigos de idioma:
+: 100
+] 101
+k 110
+p 0
+î 111
+
+Modificado idioma
+
+Tabla de frecuencias de idioma:
+: 10
+] 3
+k 4
+p 8
+î 9
+
+Treecode de idioma:
+recorrido en preorden:
+:î]kp 34
+]kp 15
+]k 7
+] 3
+k 4
+p 8
+:î 19
+î 9
+: 10
+recorrido en inorden:
+] 3
+]k 7
+k 4
+]kp 15
+p 8
+:î]kp 34
+î 9
+:î 19
+: 10
+
+Codigos de idioma:
+: 11
+] 000
+k 001
+p 01
+î 10
+
+Modificado idioma
+
+Tabla de frecuencias de idioma:
+& 1
+: 10
+@ 6
+] 3
+k 4
+p 8
+Ç 7
+î 9
+
+Treecode de idioma:
+recorrido en preorden:
+&]kp@Ç:î 48
+:î 19
+î 9
+: 10
+&]kp@Ç 29
+@Ç 13
+@ 6
+Ç 7
+&]kp 16
+&]k 8
+&] 4
+& 1
+] 3
+k 4
+p 8
+recorrido en inorden:
+î 9
+:î 19
+: 10
+&]kp@Ç:î 48
+@ 6
+@Ç 13
+Ç 7
+&]kp@Ç 29
+& 1
+&] 4
+] 3
+&]k 8
+k 4
+&]kp 16
+p 8
+
+Codigos de idioma:
+& 11000
+: 01
+@ 100
+] 11001
+k 1101
+p 111
+Ç 101
+î 00
+
+Codigo de " en idioma:
+El idioma no existe o el caracter no esta en el idioma
+
+Codigo de @ en idioma:
+@ 100
+
+Codifica en idioma el texto:
+&@::îkp]]Ç:&ppkp:]]î
+11000100010100110111111001110011010111000111111110111101110011100100
+
+Codifica en idioma el texto:
+@@&]]kpkpk::î"kÇÇp
+El texto no pertenece al idioma; primer caracter que falla: "
+
+Decodifica en idioma el texto:
+0110100110111010111010100011010110101
+:Çîkk:k:î:Ç:Ç:
+
+Decodifica en idioma el texto:
+11010100010100101010010111010010111011100
+El texto no procede de una codificacion del idioma; ultima posicion del codigo correspondiente al ultimo caracter que se podria decodificar: 37

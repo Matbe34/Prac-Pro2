@@ -40,8 +40,7 @@ void Cjt_Idiomes::afegir_modificar_idioma (const string& nomidioma) {
         cout << "Modificado " << nomidioma << endl << endl;
     }
 }
-        
-        
+
 bool Cjt_Idiomes::idioma_esta(string idioma) {
     map<string,Idioma>::iterator it = cjt_idiomes.find(idioma);
     return (it!=cjt_idiomes.end());
@@ -92,14 +91,7 @@ void Cjt_Idiomes::escriure_taulafreq(string nomidioma){
         cjt_idiomes.erase(nomidioma);
         cout << "El idioma no existe" << endl;
     }
-    cout << endl;    
-}
-
-void Cjt_Idiomes::escriure_cjt(){
-    map<string,Idioma>::iterator it;
-    for(it = cjt_idiomes.begin(); it != cjt_idiomes.end(); ++it){
-        cout << it->first << " " << it->second.consultar_taula_freq().Taula_de_freq::consultar_taula_freq().size() << endl;
-    }
+    cout << endl;
 }
 
 void Cjt_Idiomes::decodifica(string idioma, string& text) {
@@ -119,4 +111,3 @@ void Cjt_Idiomes::codifica(string idioma, string& text) {
     if(it != cjt_idiomes.end())it->second.codifica(text,i,resultat);
     else cout << "El idioma no existe" << endl << endl;
 }
-

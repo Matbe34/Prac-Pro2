@@ -17,8 +17,8 @@ Treecode::Treecode(const pair<string, int>& a, const Treecode& left, const Treec
     treecode = BinTree <pair<string, int> > (a,left.treecode,right.treecode);
 }
 
-struct comp {
-    bool operator() (const Treecode& a, const Treecode& b) const{
+struct Treecode::comp {
+    bool operator() (const Treecode& a, const Treecode& b){
         if(a.consultar_arbre().value().second != b.consultar_arbre().value().second)return a.consultar_arbre().value().second < b.consultar_arbre().value().second;
         else return a.consultar_arbre().value().first < b.consultar_arbre().value().first;
     }
@@ -27,11 +27,11 @@ struct comp {
 Treecode::~Treecode(){}
 
 void Treecode::actualitzar_treecode (Taula_de_freq& taula){
-    
+
     set<Treecode, comp> cjarbres;
     map<string,int> taulafreq = taula.consultar_taula_freq();
     map<string,int>::iterator it = taulafreq.begin();
-    
+
     while(it != taulafreq.end()){
         Treecode a(pair<string,int> ((*it).first, it->second));
         cjarbres.insert(a);
@@ -69,13 +69,9 @@ void Treecode::actualitzar_treecode (Taula_de_freq& taula){
 
 BinTree<pair<string,int> > Treecode::consultar_arbre() const{
     return treecode;
-}    
-
-void Treecode::consultar_paraula(string& codi){
-    codi = "a";
 }
 
-void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& resposta, bool& b){
+void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& resposta){
     if(text[i] == '1'){
         if(arbre.treecode.right().right().empty()){
             resposta += arbre.treecode.right().value().first;
@@ -84,7 +80,7 @@ void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& r
         else {
             Treecode arbre1;
             arbre1.treecode = arbre.treecode.right();
-            decodifica(arbre1,text,++i,resposta,b);
+            decodifica(arbre1,text,++i,resposta);
         }
     }
     else if(text[i] == '0'){
@@ -95,7 +91,7 @@ void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& r
         else {
             Treecode arbre1;
             arbre1.treecode = arbre.treecode.left();
-            decodifica(arbre1,text,++i,resposta,b);
+            decodifica(arbre1,text,++i,resposta);
         }
     }
     else {
@@ -104,7 +100,7 @@ void Treecode::decodifica(const Treecode& arbre, string& text, int& i, string& r
     }
 }
 
-void Treecode::escriure_treecode(const Treecode& arbre)const{    
+void Treecode::escriure_treecode(const Treecode& arbre)const{
     cout << "recorrido en preorden:" << endl;
     escriure_BinTree_preordre(arbre.treecode);
     cout << "recorrido en inorden:" << endl;
@@ -125,7 +121,7 @@ void Treecode::escriure_BinTree_inordre(const BinTree <pair<string, int> >& a){
         escriure_BinTree_inordre(a.left());
         pair<string,int> x = a.value();
         cout << x.first << " " << x.second<< endl;
-        escriure_BinTree_inordre(a.right());        
+        escriure_BinTree_inordre(a.right());
     }
 }
 
@@ -137,7 +133,7 @@ bool string_esta(const string& gran, const string& busca){
 string Treecode::consultar_codi(const string& paraula){
     bool b;
     string codi,aux;
-    b = cerca_aux(treecode,paraula,b,codi);
+    cerca_aux(treecode,paraula,b,codi);
     int n = codi.length();
     for(int i = 0; i < n/2; ++i){
         aux[0] = codi[i];
@@ -146,11 +142,11 @@ string Treecode::consultar_codi(const string& paraula){
     }
     return codi;
 }
-            
-            
-            
-            
-bool Treecode::cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi){
+
+
+
+
+void Treecode::cerca_aux(const BinTree<pair<string,int> >& t, const string& petita, bool& b, string& codi){
     if(t.empty())b = false;
     else if(t.value().first == petita) {
         b = true;
@@ -165,15 +161,4 @@ bool Treecode::cerca_aux(const BinTree<pair<string,int> >& t, const string& peti
             if(b)codi += "1";
         }
     }
-    return false;
 }
-            
-    
-    
-    
-    
-    
-    
-    
-    
-    

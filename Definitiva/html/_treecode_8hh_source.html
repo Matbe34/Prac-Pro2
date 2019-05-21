@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica PRO2 - Ferran Mateu: Fichero Fuente Treecode.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica PRO2 - Ferran Mateu
+   &#160;<span id="projectnumber">Inici: 12 abril 2019, Final: 21 de maig 2019</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Treecode.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_treecode_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_taula__de__freq_8hh.html">Taula_de_freq.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_treecode.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_treecode.html">Treecode</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_treecode.html#abd4467b0a13a57fcd3bddf4a60853372">   21</a></span>&#160;    BinTree&lt;pair&lt;string, int&gt; &gt; <a class="code" href="class_treecode.html#abd4467b0a13a57fcd3bddf4a60853372">treecode</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#a7dbd3eef15ed4cfa7388d9981a596c12">escriure_BinTree_preordre</a>(<span class="keyword">const</span> BinTree &lt;pair&lt;string, int&gt; &gt;&amp; a);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#a11de58d7b8f41c2356d9f6af6c0e5ab2">escriure_BinTree_inordre</a>(<span class="keyword">const</span> BinTree &lt;pair&lt;string, int&gt; &gt;&amp; a);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#aca0ff4e1e358109783ddc45a32b07425">cerca_aux</a>(<span class="keyword">const</span> BinTree&lt;pair&lt;string,int&gt; &gt;&amp; t, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; petita, <span class="keywordtype">bool</span>&amp; b, <span class="keywordtype">string</span>&amp; codi);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    BinTree&lt;pair&lt;string,int&gt; &gt; <a class="code" href="class_treecode.html#a781e52014473e0a905763a6a537cc2aa">consultar_arbre</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//  Constructora i destructora</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_treecode.html#a190d6af790b7046ed7c96e7a57f0cd38">Treecode</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_treecode.html#a190d6af790b7046ed7c96e7a57f0cd38">Treecode</a>(<span class="keyword">const</span> pair&lt;string, int&gt;&amp; a);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_treecode.html#a190d6af790b7046ed7c96e7a57f0cd38">Treecode</a>(<span class="keyword">const</span> pair&lt;string, int&gt;&amp; a, <span class="keyword">const</span> <a class="code" href="class_treecode.html">Treecode</a>&amp; left, <span class="keyword">const</span> <a class="code" href="class_treecode.html">Treecode</a>&amp; right);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//  Destructora</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_treecode.html#a4b25e99b1a356dbcf9901c1e63105b1b">~Treecode</a>();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//  Modificodores</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#a9b9e9d2f0cce1d4293a7e28ab0ba76f7">actualitzar_treecode</a> (<a class="code" href="class_taula__de__freq.html">Taula_de_freq</a>&amp; taula);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#a2a7f74ede24cf9e8cfb5c60ccc9b5534">decodifica</a>(<span class="keyword">const</span> <a class="code" href="class_treecode.html">Treecode</a>&amp; arbre, <span class="keywordtype">string</span>&amp; text, <span class="keywordtype">int</span>&amp; i, <span class="keywordtype">string</span>&amp; resposta);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//  Consultores</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_treecode.html#adee719707b72a25e70e3c108d0bd60a1">consultar_codi</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; paraula);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">struct </span>comp;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//  Escriptura</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_treecode.html#acfa6c1b465b514251f7101b61195d50f">escriure_treecode</a> (<span class="keyword">const</span> <a class="code" href="class_treecode.html">Treecode</a>&amp; arbre)<span class="keyword">const</span>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div><div class="ttc" id="class_treecode_html_aca0ff4e1e358109783ddc45a32b07425"><div class="ttname"><a href="class_treecode.html#aca0ff4e1e358109783ddc45a32b07425">Treecode::cerca_aux</a></div><div class="ttdeci">void cerca_aux(const BinTree&lt; pair&lt; string, int &gt; &gt; &amp;t, const string &amp;petita, bool &amp;b, string &amp;codi)</div><div class="ttdoc">Busca la codificació d&amp;#39;un caràcter en un arbre. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00149">Treecode.cc:149</a></div></div>
+<div class="ttc" id="class_treecode_html_a781e52014473e0a905763a6a537cc2aa"><div class="ttname"><a href="class_treecode.html#a781e52014473e0a905763a6a537cc2aa">Treecode::consultar_arbre</a></div><div class="ttdeci">BinTree&lt; pair&lt; string, int &gt; &gt; consultar_arbre() const</div><div class="ttdoc">Retorna l&amp;#39;arbre de l&amp;#39;objecte Treecode del paràmetre implícit. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00070">Treecode.cc:70</a></div></div>
+<div class="ttc" id="class_treecode_html"><div class="ttname"><a href="class_treecode.html">Treecode</a></div><div class="ttdoc">Representa una Treecode. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8hh_source.html#l00015">Treecode.hh:15</a></div></div>
+<div class="ttc" id="class_treecode_html_abd4467b0a13a57fcd3bddf4a60853372"><div class="ttname"><a href="class_treecode.html#abd4467b0a13a57fcd3bddf4a60853372">Treecode::treecode</a></div><div class="ttdeci">BinTree&lt; pair&lt; string, int &gt; &gt; treecode</div><div class="ttdoc">Representa l&amp;#39;arbre binari segons la freqüència de cada caràcter. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8hh_source.html#l00021">Treecode.hh:21</a></div></div>
+<div class="ttc" id="class_treecode_html_a4b25e99b1a356dbcf9901c1e63105b1b"><div class="ttname"><a href="class_treecode.html#a4b25e99b1a356dbcf9901c1e63105b1b">Treecode::~Treecode</a></div><div class="ttdeci">~Treecode()</div><div class="ttdoc">És la destructora de la classe. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00027">Treecode.cc:27</a></div></div>
+<div class="ttc" id="class_treecode_html_a11de58d7b8f41c2356d9f6af6c0e5ab2"><div class="ttname"><a href="class_treecode.html#a11de58d7b8f41c2356d9f6af6c0e5ab2">Treecode::escriure_BinTree_inordre</a></div><div class="ttdeci">static void escriure_BinTree_inordre(const BinTree&lt; pair&lt; string, int &gt; &gt; &amp;a)</div><div class="ttdoc">Escriu l&amp;#39;arbre a del paràmetre per referència en inordre. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00119">Treecode.cc:119</a></div></div>
+<div class="ttc" id="class_treecode_html_acfa6c1b465b514251f7101b61195d50f"><div class="ttname"><a href="class_treecode.html#acfa6c1b465b514251f7101b61195d50f">Treecode::escriure_treecode</a></div><div class="ttdeci">void escriure_treecode(const Treecode &amp;arbre) const</div><div class="ttdoc">Escriu el Treecode. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00103">Treecode.cc:103</a></div></div>
+<div class="ttc" id="_taula__de__freq_8hh_html"><div class="ttname"><a href="_taula__de__freq_8hh.html">Taula_de_freq.hh</a></div><div class="ttdoc">Especificació de la classe Taula_de_freq. </div></div>
+<div class="ttc" id="class_treecode_html_a7dbd3eef15ed4cfa7388d9981a596c12"><div class="ttname"><a href="class_treecode.html#a7dbd3eef15ed4cfa7388d9981a596c12">Treecode::escriure_BinTree_preordre</a></div><div class="ttdeci">static void escriure_BinTree_preordre(const BinTree&lt; pair&lt; string, int &gt; &gt; &amp;a)</div><div class="ttdoc">Escriu l&amp;#39;arbre del paràmetre per referència en preordre. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00110">Treecode.cc:110</a></div></div>
+<div class="ttc" id="class_taula__de__freq_html"><div class="ttname"><a href="class_taula__de__freq.html">Taula_de_freq</a></div><div class="ttdoc">Representa una Taula_de_freq. </div><div class="ttdef"><b>Definition:</b> <a href="_taula__de__freq_8hh_source.html#l00019">Taula_de_freq.hh:19</a></div></div>
+<div class="ttc" id="class_treecode_html_a2a7f74ede24cf9e8cfb5c60ccc9b5534"><div class="ttname"><a href="class_treecode.html#a2a7f74ede24cf9e8cfb5c60ccc9b5534">Treecode::decodifica</a></div><div class="ttdeci">void decodifica(const Treecode &amp;arbre, string &amp;text, int &amp;i, string &amp;resposta)</div><div class="ttdoc">Decodifica un codi en una sequència de caràcters de l&amp;#39;idioma. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00074">Treecode.cc:74</a></div></div>
+<div class="ttc" id="class_treecode_html_a190d6af790b7046ed7c96e7a57f0cd38"><div class="ttname"><a href="class_treecode.html#a190d6af790b7046ed7c96e7a57f0cd38">Treecode::Treecode</a></div><div class="ttdeci">Treecode()</div><div class="ttdoc">Crea un Treecode. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00010">Treecode.cc:10</a></div></div>
+<div class="ttc" id="class_treecode_html_adee719707b72a25e70e3c108d0bd60a1"><div class="ttname"><a href="class_treecode.html#adee719707b72a25e70e3c108d0bd60a1">Treecode::consultar_codi</a></div><div class="ttdeci">string consultar_codi(const string &amp;paraula)</div><div class="ttdoc">Consulta el codi associat a una sequència de caràcters. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00133">Treecode.cc:133</a></div></div>
+<div class="ttc" id="class_treecode_html_a9b9e9d2f0cce1d4293a7e28ab0ba76f7"><div class="ttname"><a href="class_treecode.html#a9b9e9d2f0cce1d4293a7e28ab0ba76f7">Treecode::actualitzar_treecode</a></div><div class="ttdeci">void actualitzar_treecode(Taula_de_freq &amp;taula)</div><div class="ttdoc">Actualitza un Treecode a partir d&amp;#39;una taula de freqüències. </div><div class="ttdef"><b>Definition:</b> <a href="_treecode_8cc_source.html#l00029">Treecode.cc:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

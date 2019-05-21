@@ -43,7 +43,7 @@ void Taula_de_freq::llegir_taula_freq (){
 }
 
 void Taula_de_freq::modifica_taula(const map <string, int>& btaula){
-    taula = btaula;
+   taula = btaula;
 }
 
 map <string, int> Taula_de_freq::consultar_taula_freq(){
@@ -51,8 +51,8 @@ map <string, int> Taula_de_freq::consultar_taula_freq(){
 }
 
 void Taula_de_freq::escriure_taulafreq(Taula_de_freq& taulafreq){
-    map<string,int>::iterator it1; 
-    
+    map<string,int>::iterator it1;
+
     for(it1 = taulafreq.taula.begin(); it1 != taulafreq.taula.end(); ++it1){
         cout << it1->first << " " << it1->second << endl;
     }

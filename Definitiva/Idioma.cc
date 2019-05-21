@@ -8,7 +8,7 @@ Idioma::Idioma ( string nom ){
     nom_idioma = nom;
     taulafreq.llegir_taula_freq();
     treecode.actualitzar_treecode(taulafreq);
-    
+
     map<string,int> taulafreq1 = taulafreq.consultar_taula_freq();
     map<string,int>::iterator it = taulafreq1.begin();
     while(it != taulafreq1.end()){
@@ -73,10 +73,10 @@ void Idioma::codifica(string& text, int& i, string& resultat){
 }
 
 void Idioma::decodifica(string& text, int& i, string& resultat, bool& b, int& ultim){
-    if(text.length() == 0)resultat = treecode.consultar_arbre().value().first;
+    if(text.length() == 0)resultat = "";
     else {
         while(i < text.length()){
-            treecode.decodifica(treecode,text,i,resultat,b);
+            treecode.decodifica(treecode,text,i,resultat);
             if(resultat.length() != 0)ultim = i;
         }
         if(resultat.length() == 0)b=false;
