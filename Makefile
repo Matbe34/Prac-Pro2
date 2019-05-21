@@ -28,7 +28,7 @@ superclean:
 	rm -f *.tar
 
 practica.tar:
-	tar -cvf practica.tar program.cc Cjt_Idiomes.cc Cjt_Idiomes.hh Idioma.cc Idioma.hh Treecode.cc Treecode.hh Taula_de_freq.cc Taula_de_freq.hh Makefile jp_ferran.mateu.zip
+	tar -cvf practica.tar program.cc Cjt_Idiomes.cc Cjt_Idiomes.hh Idioma.cc Idioma.hh Treecode.cc Treecode.hh Taula_de_freq.cc Taula_de_freq.hh Makefile jp_ferran.mateu.zip html.zip
 
 compara: program.exe
 	./program.exe < sample_intermedia.inp > sample_intermedia.out
