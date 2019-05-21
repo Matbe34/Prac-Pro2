@@ -1,0 +1,310 @@
+\hypertarget{class_idioma}{}\section{Referencia de la Clase Idioma}
+\label{class_idioma}\index{Idioma@{Idioma}}
+
+
+Representa un \hyperlink{class_idioma}{Idioma}.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_idioma_acb367feda82c466b5c61378636b901b6}{Idioma} (string nom)
+\begin{DoxyCompactList}\small\item\em Crea un \hyperlink{class_idioma}{Idioma} amb el seu nom. \end{DoxyCompactList}\item 
+\hyperlink{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}{$\sim$\+Idioma} ()
+\item 
+void \hyperlink{class_idioma_a227386152fe1be34cd3a0a7fce4c4c95}{actualitzar\+\_\+treecode} ()
+\begin{DoxyCompactList}\small\item\em Actualitza el treecode de l\textquotesingle{}idioma del paràmetre implícit. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_ac089a0e4b79ca8f3df040e204a3de7dd}{actualitza\+\_\+taulacodis} ()
+\begin{DoxyCompactList}\small\item\em Actualitza la taula de codis de l\textquotesingle{}idioma del paràmetre implícit. \end{DoxyCompactList}\item 
+\hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} \hyperlink{class_idioma_a3d06a9d14291a5b59e0de1a65512ed80}{consultar\+\_\+taula\+\_\+freq} ()
+\begin{DoxyCompactList}\small\item\em Consulta la taula de freqüències de l\textquotesingle{}idioma del paràmetre implícit. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a2c3024b18da125926668a2df2b178992}{escriure\+\_\+treecode} ()
+\begin{DoxyCompactList}\small\item\em Escriu el treecode de l\textquotesingle{}idioma del paràmetre implícit. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a4f1102ff409d13738ff09268e8e045da}{escriure\+\_\+taulacodis} (string s)
+\begin{DoxyCompactList}\small\item\em Escriu la taula de codis de l\textquotesingle{}idioma del paràmetre implícit. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_abb8d57bbf17437c67cf3860643e60386}{escriure\+\_\+taulafreq} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_idioma_a4f95caa662042f1404ab10319b50ee56}{nom\+\_\+idioma}
+\item 
+\hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} \hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq}
+\item 
+\hyperlink{class_treecode}{Treecode} \hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode}
+\item 
+map$<$ string, string $>$ \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \hyperlink{class_idioma}{Idioma}. 
+
+Definición en la línea 23 del archivo Idioma.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_idioma_acb367feda82c466b5c61378636b901b6}\label{class_idioma_acb367feda82c466b5c61378636b901b6}} 
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{Idioma()}{Idioma()}}
+{\footnotesize\ttfamily Idioma\+::\+Idioma (\begin{DoxyParamCaption}\item[{string}]{nom }\end{DoxyParamCaption})}
+
+
+
+Crea un \hyperlink{class_idioma}{Idioma} amb el seu nom. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha creat un idioma amb el nom. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+14                            \{
+15     \hyperlink{class_idioma_a4f95caa662042f1404ab10319b50ee56}{nom\_idioma} = nom;
+16     \hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq}.\hyperlink{class_taula__de__freq_a6e3d7bfaa7227f9b7603864c7a3da2cf}{llegir\_taula\_freq}();
+17     \hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode}.\hyperlink{class_treecode_a9b9e9d2f0cce1d4293a7e28ab0ba76f7}{actualitzar\_treecode}(\hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq});
+18     map<string,int> taulafreq1 = \hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq}.\hyperlink{class_taula__de__freq_a438f3ce025ca433420891fead5affae4}{consultar\_taula\_freq}();
+19     map<string,int>::iterator it = taulafreq1.begin();
+20 \textcolor{comment}{//     map<string,string>::iterator it2 = taulacodis.begin();}
+21     \textcolor{keywordflow}{while}(it != taulafreq1.end())\{
+22         \textcolor{keywordtype}{string} s = \hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode}.\hyperlink{class_treecode_adee719707b72a25e70e3c108d0bd60a1}{consultar\_codi}(it->first);
+23         pair<string,string> a (it->first,s);
+24         \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}.insert(a);
+25         ++it;
+26     \}
+27 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}\label{class_idioma_a80c90f8c9a7f824d7d7d171b9face201}} 
+\index{Idioma@{Idioma}!````~Idioma@{$\sim$\+Idioma}}
+\index{````~Idioma@{$\sim$\+Idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{$\sim$\+Idioma()}{~Idioma()}}
+{\footnotesize\ttfamily Idioma\+::$\sim$\+Idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 29 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+29 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_idioma_a227386152fe1be34cd3a0a7fce4c4c95}\label{class_idioma_a227386152fe1be34cd3a0a7fce4c4c95}} 
+\index{Idioma@{Idioma}!actualitzar\+\_\+treecode@{actualitzar\+\_\+treecode}}
+\index{actualitzar\+\_\+treecode@{actualitzar\+\_\+treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{actualitzar\+\_\+treecode()}{actualitzar\_treecode()}}
+{\footnotesize\ttfamily void Idioma\+::actualitzar\+\_\+treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualitza el treecode de l\textquotesingle{}idioma del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha actualitzat el treecode del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+31                                  \{
+32     \hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode}.\hyperlink{class_treecode_a9b9e9d2f0cce1d4293a7e28ab0ba76f7}{actualitzar\_treecode}(\hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq});
+33 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_ac089a0e4b79ca8f3df040e204a3de7dd}\label{class_idioma_ac089a0e4b79ca8f3df040e204a3de7dd}} 
+\index{Idioma@{Idioma}!actualitza\+\_\+taulacodis@{actualitza\+\_\+taulacodis}}
+\index{actualitza\+\_\+taulacodis@{actualitza\+\_\+taulacodis}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{actualitza\+\_\+taulacodis()}{actualitza\_taulacodis()}}
+{\footnotesize\ttfamily void Idioma\+::actualitza\+\_\+taulacodis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualitza la taula de codis de l\textquotesingle{}idioma del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha actualitzat la taula de codis del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definición en la línea 35 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+35                                   \{
+36     
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a3d06a9d14291a5b59e0de1a65512ed80}\label{class_idioma_a3d06a9d14291a5b59e0de1a65512ed80}} 
+\index{Idioma@{Idioma}!consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}}
+\index{consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+taula\+\_\+freq()}{consultar\_taula\_freq()}}
+{\footnotesize\ttfamily \hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} Idioma\+::consultar\+\_\+taula\+\_\+freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta la taula de freqüències de l\textquotesingle{}idioma del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la taula de freqüències del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definición en la línea 39 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+39                                           \{
+40     \textcolor{keywordflow}{return} \hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq};
+41 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a2c3024b18da125926668a2df2b178992}\label{class_idioma_a2c3024b18da125926668a2df2b178992}} 
+\index{Idioma@{Idioma}!escriure\+\_\+treecode@{escriure\+\_\+treecode}}
+\index{escriure\+\_\+treecode@{escriure\+\_\+treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{escriure\+\_\+treecode()}{escriure\_treecode()}}
+{\footnotesize\ttfamily void Idioma\+::escriure\+\_\+treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escriu el treecode de l\textquotesingle{}idioma del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit el treecode pel canal estàndard de sortida 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+43                                \{
+44     \hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode}.\hyperlink{class_treecode_acfa6c1b465b514251f7101b61195d50f}{escriure\_treecode}(\hyperlink{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}{treecode});
+45 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_a4f1102ff409d13738ff09268e8e045da}\label{class_idioma_a4f1102ff409d13738ff09268e8e045da}} 
+\index{Idioma@{Idioma}!escriure\+\_\+taulacodis@{escriure\+\_\+taulacodis}}
+\index{escriure\+\_\+taulacodis@{escriure\+\_\+taulacodis}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{escriure\+\_\+taulacodis()}{escriure\_taulacodis()}}
+{\footnotesize\ttfamily void Idioma\+::escriure\+\_\+taulacodis (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Escriu la taula de codis de l\textquotesingle{}idioma del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha escrit la taula de codis pel canal estàndard de sortida 
+\end{DoxyPostcond}
+
+
+Definición en la línea 47 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+47                                          \{
+48     
+49     \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"todos"})\{
+50         map<string,string>::iterator it;
+51         \textcolor{keywordflow}{for}(it = \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}.begin(); it != \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}.end(); ++it)\{
+52             cout << it->first << \textcolor{stringliteral}{" "} << it->second << endl;
+53         \}
+54     \}
+55     \textcolor{keywordflow}{else} \{
+56         map<string,string>::iterator it = \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}.find(s);
+57         \textcolor{keywordflow}{if}(it != \hyperlink{class_idioma_a8eb4228a5182a71efe31c110f2500723}{taulacodis}.end())cout << it->first << \textcolor{stringliteral}{" "} << it->second << endl;
+58         \textcolor{keywordflow}{else} \{
+59             cout << \textcolor{stringliteral}{"El idioma no existe o el caracter no esta en el idioma"} << endl;
+60         \}
+61     \}
+62         
+63 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_idioma_abb8d57bbf17437c67cf3860643e60386}\label{class_idioma_abb8d57bbf17437c67cf3860643e60386}} 
+\index{Idioma@{Idioma}!escriure\+\_\+taulafreq@{escriure\+\_\+taulafreq}}
+\index{escriure\+\_\+taulafreq@{escriure\+\_\+taulafreq}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{escriure\+\_\+taulafreq()}{escriure\_taulafreq()}}
+{\footnotesize\ttfamily void Idioma\+::escriure\+\_\+taulafreq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 65 del archivo Idioma.\+cc.
+
+
+\begin{DoxyCode}
+65                                \{
+66     \hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq}.Taula\_de\_freq::escriure\_taulafreq(\hyperlink{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}{taulafreq});
+67 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_idioma_a4f95caa662042f1404ab10319b50ee56}\label{class_idioma_a4f95caa662042f1404ab10319b50ee56}} 
+\index{Idioma@{Idioma}!nom\+\_\+idioma@{nom\+\_\+idioma}}
+\index{nom\+\_\+idioma@{nom\+\_\+idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{nom\+\_\+idioma}{nom\_idioma}}
+{\footnotesize\ttfamily string Idioma\+::nom\+\_\+idioma\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 27 del archivo Idioma.\+hh.
+
+\mbox{\Hypertarget{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}\label{class_idioma_a51e5f7366342e04f3dae8a4f0fdcca60}} 
+\index{Idioma@{Idioma}!taulafreq@{taulafreq}}
+\index{taulafreq@{taulafreq}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{taulafreq}{taulafreq}}
+{\footnotesize\ttfamily \hyperlink{class_taula__de__freq}{Taula\+\_\+de\+\_\+freq} Idioma\+::taulafreq\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Idioma.\+hh.
+
+\mbox{\Hypertarget{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}\label{class_idioma_ab80d7ef5fec4c922bc65e97e6e3bf968}} 
+\index{Idioma@{Idioma}!treecode@{treecode}}
+\index{treecode@{treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{treecode}{treecode}}
+{\footnotesize\ttfamily \hyperlink{class_treecode}{Treecode} Idioma\+::treecode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 29 del archivo Idioma.\+hh.
+
+\mbox{\Hypertarget{class_idioma_a8eb4228a5182a71efe31c110f2500723}\label{class_idioma_a8eb4228a5182a71efe31c110f2500723}} 
+\index{Idioma@{Idioma}!taulacodis@{taulacodis}}
+\index{taulacodis@{taulacodis}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{taulacodis}{taulacodis}}
+{\footnotesize\ttfamily map$<$string, string$>$ Idioma\+::taulacodis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Idioma.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_idioma_8hh}{Idioma.\+hh}\item 
+\hyperlink{_idioma_8cc}{Idioma.\+cc}\end{DoxyCompactItemize}

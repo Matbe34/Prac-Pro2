@@ -1,0 +1,87 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal per la gestió de codificar i descodificar.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal per la gestió de codificar i descodificar. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 21 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+21            \{
+22     
+23     \hyperlink{class_cjt___idiomes}{Cjt\_Idiomes} conjunt;
+24     conjunt.\hyperlink{class_cjt___idiomes_a27ad0dd99449fffa904e6a757b4388ad}{omplir\_cjt\_idiomes}();
+25     \textcolor{keywordtype}{string} op;
+26     \textcolor{keywordtype}{string} nomidioma, text;
+27 \textcolor{comment}{//     conjunt.escriure\_cjt();}
+28 \textcolor{comment}{//     return 0;}
+29     \textcolor{keywordflow}{while}(op != \textcolor{stringliteral}{"fin"})\{
+30         
+31         \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"añadir"} or op == \textcolor{stringliteral}{"modificar"})\{
+32             cin >> nomidioma;
+33             conjunt.\hyperlink{class_cjt___idiomes_a9e75f643c62886df635403bd3108c1df}{afegir\_modificar\_idioma} (nomidioma);
+34         \}
+35         
+36         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"codifica"})\{
+37             cin >> nomidioma >> text;
+38             \textcolor{keywordflow}{if} (conjunt.\hyperlink{class_cjt___idiomes_a4c46be5ecf3b12b3f481ace7d487fdc3}{idioma\_esta} (nomidioma)) conjunt.\hyperlink{class_cjt___idiomes_a745de8e5d29e235cb1e2142d8acaaad9}{codifica}(nomidioma, text);
+39         \}
+40         
+41         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"decodifica"})\{
+42             cin >> nomidioma >> text;
+43             \textcolor{keywordflow}{if} (conjunt.\hyperlink{class_cjt___idiomes_a4c46be5ecf3b12b3f481ace7d487fdc3}{idioma\_esta} (nomidioma)) conjunt.\hyperlink{class_cjt___idiomes_ab77062c4c2b311bbc1fc1143073bc036}{decodifica}(nomidioma, text);
+44         \}
+45         
+46         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"tabla\_frec"})\{
+47             cin >> nomidioma;
+48             \textcolor{comment}{/*if (conjunt.idioma\_esta (nomidioma)) */}conjunt.\hyperlink{class_cjt___idiomes_a98862ab41b59ac71eca4408e2b6bf6f0}{escriure\_taulafreq}(nomidioma
+      );
+49         \}
+50         
+51         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"treecode"})\{
+52             cin >> nomidioma;
+53             \textcolor{comment}{/*if (conjunt.idioma\_esta (nomidioma)) */}conjunt.\hyperlink{class_cjt___idiomes_a49666adf7e2a9cefc96d4b7b3d925710}{escriure\_treecode}(nomidioma);
+54         \}
+55         
+56         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(op == \textcolor{stringliteral}{"codigos"})\{
+57             cin >> nomidioma >> text;
+58             \textcolor{comment}{/*if (conjunt.idioma\_esta (nomidioma)) */}conjunt.\hyperlink{class_cjt___idiomes_afdad5e96949152abf75a9598224be426}{escriure\_taulacodis}(
+      nomidioma, text);
+59         \}
+60         
+61         cin >> op;
+62 \textcolor{comment}{//         cout << endl << "----------------" << op << "------------------" << endl << endl;}
+63     \}
+64     
+65 \}
+\end{DoxyCode}

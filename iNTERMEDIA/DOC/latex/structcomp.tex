@@ -1,0 +1,42 @@
+\hypertarget{structcomp}{}\section{Referencia de la Estructura comp}
+\label{structcomp}\index{comp@{comp}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structcomp_acd68612e049fa4ad770640fcfb1d33cd}{operator()} (const \hyperlink{class_treecode}{Treecode} \&a, const \hyperlink{class_treecode}{Treecode} \&b) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 24 del archivo Treecode.\+cc.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{structcomp_acd68612e049fa4ad770640fcfb1d33cd}\label{structcomp_acd68612e049fa4ad770640fcfb1d33cd}} 
+\index{comp@{comp}!operator()@{operator()}}
+\index{operator()@{operator()}!comp@{comp}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool comp\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_treecode}{Treecode} \&}]{a,  }\item[{const \hyperlink{class_treecode}{Treecode} \&}]{b }\end{DoxyParamCaption}) const}
+
+
+
+Definición en la línea 25 del archivo Treecode.\+cc.
+
+
+\begin{DoxyCode}
+25                                                                 \{
+26         \textcolor{keywordflow}{if}(a.\hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().second != b.
+      \hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().second)\textcolor{keywordflow}{return} a.\hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().second < 
+      b.\hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().second;
+27         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} a.\hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().first < b.
+      \hyperlink{class_treecode_a781e52014473e0a905763a6a537cc2aa}{consultar\_arbre}().value().first;
+28     \}
+\end{DoxyCode}
+
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_treecode_8cc}{Treecode.\+cc}\end{DoxyCompactItemize}

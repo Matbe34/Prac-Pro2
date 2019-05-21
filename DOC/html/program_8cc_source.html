@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica PRO2 - Ferran Mateu: Fichero Fuente program.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica PRO2 - Ferran Mateu
+   &#160;<span id="projectnumber">Inici: 12 abril 2019, Final:</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">program.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="program_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt___idiomes_8hh.html">Cjt_Idiomes.hh</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   21</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_cjt___idiomes.html">Cjt_Idiomes</a> conjunt;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    conjunt.<a class="code" href="class_cjt___idiomes.html#a27ad0dd99449fffa904e6a757b4388ad">omplir_cjt_idiomes</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">string</span> op;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">string</span> nomidioma, text;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span>(op != <span class="stringliteral">&quot;fin&quot;</span>){</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;añadir&quot;</span> or op == <span class="stringliteral">&quot;modificar&quot;</span>){</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            cin &gt;&gt; nomidioma;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            conjunt.<a class="code" href="class_cjt___idiomes.html#a9e75f643c62886df635403bd3108c1df">afegir_modificar_idioma</a> (nomidioma);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;codifica&quot;</span>){</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            cin &gt;&gt; nomidioma &gt;&gt; text;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span> (conjunt.<a class="code" href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">idioma_esta</a> (nomidioma, conjunt)) conjunt.<a class="code" href="class_cjt___idiomes.html#a745de8e5d29e235cb1e2142d8acaaad9">codifica</a> (nomidioma, text);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;decodifica&quot;</span>){</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            cin &gt;&gt; nomidioma &gt;&gt; text;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span> (conjunt.<a class="code" href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">idioma_esta</a> (nomidioma, conjunt)) conjunt.<a class="code" href="class_cjt___idiomes.html#ab77062c4c2b311bbc1fc1143073bc036">decodifica</a> (nomidioma, text);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;tabla_frec&quot;</span>){</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            cin &gt;&gt; nomidioma;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (conjunt.<a class="code" href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">idioma_esta</a> (nomidioma, conjunt)) conjunt.<a class="code" href="class_cjt___idiomes.html#a10390ac35850d05a28d06dbf6a3deb4f">consultar_taula_freq</a> (nomidioma);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;treecode&quot;</span>){</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            cin &gt;&gt; nomidioma;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (conjunt.<a class="code" href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">idioma_esta</a> (nomidioma, conjunt)) conjunt.<a class="code" href="class_cjt___idiomes.html#a2bf21a96cdbba804d53a097c42fe3b93">consultar_Treecode</a> (nomidioma);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(op == <span class="stringliteral">&quot;codigos&quot;</span>){</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            cin &gt;&gt; nomidioma;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (conjunt.<a class="code" href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">idioma_esta</a> (nomidioma, conjunt)) conjunt.<a class="code" href="class_cjt___idiomes.html#af8497129cf6b3b094e6f26a0c030c785">consultar_taula_codis</a> (nomidioma);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        cin &gt;&gt; op;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div><div class="ttc" id="class_cjt___idiomes_html_a9e75f643c62886df635403bd3108c1df"><div class="ttname"><a href="class_cjt___idiomes.html#a9e75f643c62886df635403bd3108c1df">Cjt_Idiomes::afegir_modificar_idioma</a></div><div class="ttdeci">void afegir_modificar_idioma(const string &amp;idioma)</div><div class="ttdoc">Afegeix un idioma o el modifica. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html_a745de8e5d29e235cb1e2142d8acaaad9"><div class="ttname"><a href="class_cjt___idiomes.html#a745de8e5d29e235cb1e2142d8acaaad9">Cjt_Idiomes::codifica</a></div><div class="ttdeci">string codifica(string idioma, string &amp;text)</div><div class="ttdoc">Codifica un text en un idioma. </div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_cjt___idiomes_html_af8497129cf6b3b094e6f26a0c030c785"><div class="ttname"><a href="class_cjt___idiomes.html#af8497129cf6b3b094e6f26a0c030c785">Cjt_Idiomes::consultar_taula_codis</a></div><div class="ttdeci">map&lt; string, string &gt; consultar_taula_codis(string idioma)</div><div class="ttdoc">Consulta la taula de codis del idioma especificat. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html_a27ad0dd99449fffa904e6a757b4388ad"><div class="ttname"><a href="class_cjt___idiomes.html#a27ad0dd99449fffa904e6a757b4388ad">Cjt_Idiomes::omplir_cjt_idiomes</a></div><div class="ttdeci">void omplir_cjt_idiomes()</div><div class="ttdoc">Omple un conjunt d&amp;#39;idiomes amb n idiomes. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html_ab77062c4c2b311bbc1fc1143073bc036"><div class="ttname"><a href="class_cjt___idiomes.html#ab77062c4c2b311bbc1fc1143073bc036">Cjt_Idiomes::decodifica</a></div><div class="ttdeci">string decodifica(string idioma, string &amp;text)</div><div class="ttdoc">Decodifica un text en un idioma. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html_a10390ac35850d05a28d06dbf6a3deb4f"><div class="ttname"><a href="class_cjt___idiomes.html#a10390ac35850d05a28d06dbf6a3deb4f">Cjt_Idiomes::consultar_taula_freq</a></div><div class="ttdeci">map&lt; string, int &gt; consultar_taula_freq(string idioma)</div><div class="ttdoc">Consulta la taula de freq del idioma. </div></div>
+<div class="ttc" id="program_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="program_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="program_8cc_source.html#l00021">program.cc:21</a></div></div>
+<div class="ttc" id="_cjt___idiomes_8hh_html"><div class="ttname"><a href="_cjt___idiomes_8hh.html">Cjt_Idiomes.hh</a></div><div class="ttdoc">Especificació de la classe Cjt_Idiomes. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html"><div class="ttname"><a href="class_cjt___idiomes.html">Cjt_Idiomes</a></div><div class="ttdoc">Representa un Cjt_Idiomes. </div><div class="ttdef"><b>Definition:</b> <a href="_cjt___idiomes_8hh_source.html#l00017">Cjt_Idiomes.hh:17</a></div></div>
+<div class="ttc" id="class_cjt___idiomes_html_a2bf21a96cdbba804d53a097c42fe3b93"><div class="ttname"><a href="class_cjt___idiomes.html#a2bf21a96cdbba804d53a097c42fe3b93">Cjt_Idiomes::consultar_Treecode</a></div><div class="ttdeci">BinTree&lt; pair&lt; string, int &gt; &gt; consultar_Treecode(string idioma)</div><div class="ttdoc">Consulta el Treecode del idioma especificat. </div></div>
+<div class="ttc" id="class_cjt___idiomes_html_a699b46fae0fb902952cc5cad27604928"><div class="ttname"><a href="class_cjt___idiomes.html#a699b46fae0fb902952cc5cad27604928">Cjt_Idiomes::idioma_esta</a></div><div class="ttdeci">bool idioma_esta(const string &amp;idioma, const Cjt_Idiomes &amp;conjunt)</div><div class="ttdoc">Comprva si un idioma es troba al conjunt o no. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

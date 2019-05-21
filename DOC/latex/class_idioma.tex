@@ -1,0 +1,118 @@
+\hypertarget{class_idioma}{}\section{Referencia de la Clase Idioma}
+\label{class_idioma}\index{Idioma@{Idioma}}
+
+
+Representa un \hyperlink{class_idioma}{Idioma}.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_idioma_a6722a621ce03825772493e67e5a17215}{Idioma} ()
+\begin{DoxyCompactList}\small\item\em Crea un \hyperlink{class_idioma}{Idioma}. \end{DoxyCompactList}\item 
+void \hyperlink{class_idioma_a02661047ff31660f333b54f6d288ff19}{afegir\+\_\+modificar\+\_\+idioma} ()
+\begin{DoxyCompactList}\small\item\em Afegeix un idioma o el modifica. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \hyperlink{class_idioma_a98badc57cda44db5069ac044323b8383}{consultar\+\_\+taula\+\_\+freq} ()
+\begin{DoxyCompactList}\small\item\em Consulta la taula de freqüències del paràmetre implícit. \end{DoxyCompactList}\item 
+Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \hyperlink{class_idioma_aca3c9e20f1900ad58ba58fe3112350fe}{consultar\+\_\+\+Treecode} ()
+\begin{DoxyCompactList}\small\item\em Consulta el \hyperlink{class_treecode}{Treecode} del paràmetre implícit. \end{DoxyCompactList}\item 
+map$<$ string, string $>$ \hyperlink{class_idioma_a5cb257a60b1ee7cc6b912de01913117e}{consultar\+\_\+taula\+\_\+codis} ()
+\begin{DoxyCompactList}\small\item\em Consulta la taula de codis del paràmetre implícit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \hyperlink{class_idioma}{Idioma}. 
+
+Definición en la línea 23 del archivo Idioma.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_idioma_a6722a621ce03825772493e67e5a17215}\label{class_idioma_a6722a621ce03825772493e67e5a17215}} 
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\index{Idioma@{Idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{Idioma()}{Idioma()}}
+{\footnotesize\ttfamily Idioma\+::\+Idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un \hyperlink{class_idioma}{Idioma}. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+S\textquotesingle{}ha creat un idioma buit 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_idioma_a02661047ff31660f333b54f6d288ff19}\label{class_idioma_a02661047ff31660f333b54f6d288ff19}} 
+\index{Idioma@{Idioma}!afegir\+\_\+modificar\+\_\+idioma@{afegir\+\_\+modificar\+\_\+idioma}}
+\index{afegir\+\_\+modificar\+\_\+idioma@{afegir\+\_\+modificar\+\_\+idioma}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{afegir\+\_\+modificar\+\_\+idioma()}{afegir\_modificar\_idioma()}}
+{\footnotesize\ttfamily void Idioma\+::afegir\+\_\+modificar\+\_\+idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afegeix un idioma o el modifica. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El paràmetre implícit s\textquotesingle{}hi ha afegit l\textquotesingle{}idioma si no hi era, sinó, s\textquotesingle{}ha modificat l\textquotesingle{}idioma sumant les freqüències. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_idioma_a98badc57cda44db5069ac044323b8383}\label{class_idioma_a98badc57cda44db5069ac044323b8383}} 
+\index{Idioma@{Idioma}!consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}}
+\index{consultar\+\_\+taula\+\_\+freq@{consultar\+\_\+taula\+\_\+freq}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+taula\+\_\+freq()}{consultar\_taula\_freq()}}
+{\footnotesize\ttfamily map$<$string,int$>$ Idioma\+::consultar\+\_\+taula\+\_\+freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta la taula de freqüències del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna la taula de freqüències del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_idioma_aca3c9e20f1900ad58ba58fe3112350fe}\label{class_idioma_aca3c9e20f1900ad58ba58fe3112350fe}} 
+\index{Idioma@{Idioma}!consultar\+\_\+\+Treecode@{consultar\+\_\+\+Treecode}}
+\index{consultar\+\_\+\+Treecode@{consultar\+\_\+\+Treecode}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+\+Treecode()}{consultar\_Treecode()}}
+{\footnotesize\ttfamily Bin\+Tree$<$ pair $<$ string, int$>$ $>$ Idioma\+::consultar\+\_\+\+Treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el \hyperlink{class_treecode}{Treecode} del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un Bin\+Tree del \hyperlink{class_treecode}{Treecode} del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_idioma_a5cb257a60b1ee7cc6b912de01913117e}\label{class_idioma_a5cb257a60b1ee7cc6b912de01913117e}} 
+\index{Idioma@{Idioma}!consultar\+\_\+taula\+\_\+codis@{consultar\+\_\+taula\+\_\+codis}}
+\index{consultar\+\_\+taula\+\_\+codis@{consultar\+\_\+taula\+\_\+codis}!Idioma@{Idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+taula\+\_\+codis()}{consultar\_taula\_codis()}}
+{\footnotesize\ttfamily map$<$string,string$>$ Idioma\+::consultar\+\_\+taula\+\_\+codis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta la taula de codis del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Retorna un map amb la taula de codis del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_idioma_8hh}{Idioma.\+hh}\end{DoxyCompactItemize}
